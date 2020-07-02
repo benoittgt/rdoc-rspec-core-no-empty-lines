@@ -21,8 +21,6 @@
 <link href="../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="class">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,42 +55,29 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
 <div id="parent-class-section" class="nav-section">
   <h3>Parent</h3>
 
-  
   <p class="link"><a href="../../Object.html">Object</a>
-  
 </div>
 
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-c-new">::new</a>
-    
     <li ><a href="#method-i-drb_argv">#drb_argv</a>
-    
     <li ><a href="#method-i-drb_port">#drb_port</a>
-    
     <li ><a href="#method-i-run">#run</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -108,41 +93,27 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-new" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">new</span><span
             class="method-args">(options, configuration=RSpec.configuration)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="new-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/drb.rb, line 7</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">options</span>, <span class="ruby-identifier">configuration</span>=<span class="ruby-constant">RSpec</span>.<span class="ruby-identifier">configuration</span>)
@@ -150,41 +121,28 @@
   <span class="ruby-ivar">@configuration</span> = <span class="ruby-identifier">configuration</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-drb_argv" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">drb_argv</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="drb_argv-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/drb.rb, line 26</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">drb_argv</span>
@@ -194,66 +152,42 @@
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-drb_port" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">drb_port</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="drb_port-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/drb.rb, line 12</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">drb_port</span>
   <span class="ruby-ivar">@options</span>.<span class="ruby-identifier">options</span>[<span class="ruby-value">:drb_port</span>] <span class="ruby-operator">||</span> <span class="ruby-constant">ENV</span>[<span class="ruby-string">&#39;RSPEC_DRB&#39;</span>] <span class="ruby-operator">||</span> <span class="ruby-value">8989</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-run" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">run</span><span
             class="method-args">(err, out)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="run-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/drb.rb, line 16</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">run</span>(<span class="ruby-identifier">err</span>, <span class="ruby-identifier">out</span>)
@@ -266,19 +200,14 @@
   <span class="ruby-identifier">spec_server</span>.<span class="ruby-identifier">run</span>(<span class="ruby-identifier">drb_argv</span>, <span class="ruby-identifier">err</span>, <span class="ruby-identifier">out</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

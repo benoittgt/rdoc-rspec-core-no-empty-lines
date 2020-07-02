@@ -21,8 +21,6 @@
 <link href="../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="module">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,42 +55,27 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-c-ascend">::ascend</a>
-    
     <li ><a href="#method-c-ascending">::ascending</a>
-    
     <li ><a href="#method-c-build_hash_from">::build_hash_from</a>
-    
     <li ><a href="#method-c-deep_hash_dup">::deep_hash_dup</a>
-    
     <li ><a href="#method-c-id_from">::id_from</a>
-    
     <li ><a href="#method-c-location_tuple_from">::location_tuple_from</a>
-    
     <li ><a href="#method-c-relative_path">::relative_path</a>
-    
     <li ><a href="#method-c-relative_path_regex">::relative_path_regex</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -121,88 +104,57 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
     <section class="constants-list">
       <header>
         <h3>Constants</h3>
       </header>
       <dl>
-      
         <dt id="RESERVED_KEYS">RESERVED_KEYS
-        
         <dd><p>@private</p>
-        
-      
       </dl>
     </section>
-    
 
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-ascend" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">ascend</span><span
             class="method-args">(metadata)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private Returns an enumerator that iteratively walks up the given metadata through all example group ancestors, yielding each metadata hash along the way.</p>
-          
-          
 
-          
           <div class="method-source-code" id="ascend-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/metadata.rb, line 71</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">ascend</span>(<span class="ruby-identifier">metadata</span>)
   <span class="ruby-identifier">enum_for</span>(<span class="ruby-value">:ascending</span>, <span class="ruby-identifier">metadata</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-ascending" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">ascending</span><span
             class="method-args">(metadata) { |metadata| ... }</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private Iteratively walks up from the given metadata through all example group ancestors, yielding each metadata hash along the way.</p>
-          
-          
 
-          
           <div class="method-source-code" id="ascending-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/metadata.rb, line 58</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">ascending</span>(<span class="ruby-identifier">metadata</span>)
@@ -215,33 +167,21 @@
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-build_hash_from" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">build_hash_from</span><span
             class="method-args">(args, warn_about_example_group_filtering=false)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private Used internally to build a hash from an args array. Symbols are converted into hash keys with a value of `true`. This is done to support simple tagging using a symbol, rather than needing to do `:symbol =&gt; true`.</p>
-          
-          
 
-          
           <div class="method-source-code" id="build_hash_from-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/metadata.rb, line 80</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">build_hash_from</span>(<span class="ruby-identifier">args</span>, <span class="ruby-identifier">warn_about_example_group_filtering</span>=<span class="ruby-keyword">false</span>)
@@ -257,33 +197,21 @@
   <span class="ruby-identifier">hash</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-deep_hash_dup" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">deep_hash_dup</span><span
             class="method-args">(object)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="deep_hash_dup-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/metadata.rb, line 94</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">deep_hash_dup</span>(<span class="ruby-identifier">object</span>)
@@ -296,101 +224,65 @@
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-id_from" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">id_from</span><span
             class="method-args">(metadata)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="id_from-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/metadata.rb, line 105</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">id_from</span>(<span class="ruby-identifier">metadata</span>)
   <span class="ruby-node">&quot;#{metadata[:rerun_file_path]}[#{metadata[:scoped_id]}]&quot;</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-location_tuple_from" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">location_tuple_from</span><span
             class="method-args">(metadata)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="location_tuple_from-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/metadata.rb, line 110</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">location_tuple_from</span>(<span class="ruby-identifier">metadata</span>)
   [<span class="ruby-identifier">metadata</span>[<span class="ruby-value">:absolute_file_path</span>], <span class="ruby-identifier">metadata</span>[<span class="ruby-value">:line_number</span>]]
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-relative_path" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">relative_path</span><span
             class="method-args">(line)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api private</p>
 
 <p>@param line [String] current code line @return [String] relative path to line</p>
-          
-          
 
-          
           <div class="method-source-code" id="relative_path-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/metadata.rb, line 44</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">relative_path</span>(<span class="ruby-identifier">line</span>)
@@ -404,54 +296,37 @@
   <span class="ruby-comment"># :nocov:</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-relative_path_regex" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">relative_path_regex</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Matches strings either at the beginning of the input or prefixed with a whitespace, containing the current path, either postfixed with the separator, or at the end of the string. Match groups are the character before and the character after the string if any.</p>
 
 <p><a href="http://rubular.com/r/fT0gmX6VJX">rubular.com/r/fT0gmX6VJX</a> <a href="http://rubular.com/r/duOrD4i3wb">rubular.com/r/duOrD4i3wb</a> <a href="http://rubular.com/r/sbAMHFrOx1">rubular.com/r/sbAMHFrOx1</a></p>
-          
-          
 
-          
           <div class="method-source-code" id="relative_path_regex-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/metadata.rb, line 36</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">relative_path_regex</span>
   <span class="ruby-ivar">@relative_path_regex</span> <span class="ruby-operator">||=</span> <span class="ruby-regexp">/(\A|\s)#{File.expand_path(&#39;.&#39;)}(#{File::SEPARATOR}|\s|\Z)/</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

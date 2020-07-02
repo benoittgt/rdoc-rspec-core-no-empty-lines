@@ -21,8 +21,6 @@
 <link href="../../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="class">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,40 +55,28 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
 <div id="parent-class-section" class="nav-section">
   <h3>Parent</h3>
 
-  
   <p class="link"><a href="../../../Object.html">Object</a>
-  
 </div>
 
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-c-new">::new</a>
-    
     <li ><a href="#method-i-order">#order</a>
-    
     <li ><a href="#method-i-used-3F">#used?</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -106,55 +92,36 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
     <section class="constants-list">
       <header>
         <h3>Constants</h3>
       </header>
       <dl>
-      
         <dt id="MAX_32_BIT">MAX_32_BIT
-        
         <dd>
-        
-      
       </dl>
     </section>
-    
 
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-new" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">new</span><span
             class="method-args">(configuration)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="new-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/ordering.rb, line 16</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">configuration</span>)
@@ -162,41 +129,28 @@
   <span class="ruby-ivar">@used</span> = <span class="ruby-keyword">false</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-order" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">order</span><span
             class="method-args">(items)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="order-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/ordering.rb, line 25</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">order</span>(<span class="ruby-identifier">items</span>)
@@ -206,52 +160,35 @@
   <span class="ruby-identifier">items</span>.<span class="ruby-identifier">sort_by</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span> <span class="ruby-identifier">jenkins_hash_digest</span>(<span class="ruby-identifier">seed</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">item</span>.<span class="ruby-identifier">id</span>) }
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-used-3F" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">used?</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="used-3F-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/ordering.rb, line 21</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">used?</span>
   <span class="ruby-ivar">@used</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

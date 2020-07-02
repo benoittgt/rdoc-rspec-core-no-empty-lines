@@ -21,8 +21,6 @@
 <link href="../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="class">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,64 +55,40 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
 <div id="parent-class-section" class="nav-section">
   <h3>Parent</h3>
 
-  
   <p class="link"><a href="../../Object.html">Object</a>
-  
 </div>
 
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-c-autorun">::autorun</a>
-    
     <li ><a href="#method-c-autorun_disabled-3F">::autorun_disabled?</a>
-    
     <li ><a href="#method-c-disable_autorun-21">::disable_autorun!</a>
-    
     <li ><a href="#method-c-handle_interrupt">::handle_interrupt</a>
-    
     <li ><a href="#method-c-installed_at_exit-3F">::installed_at_exit?</a>
-    
     <li ><a href="#method-c-invoke">::invoke</a>
-    
     <li ><a href="#method-c-new">::new</a>
-    
     <li ><a href="#method-c-perform_at_exit">::perform_at_exit</a>
-    
     <li ><a href="#method-c-run">::run</a>
-    
     <li ><a href="#method-c-running_in_drb-3F">::running_in_drb?</a>
-    
     <li ><a href="#method-c-trap_interrupt">::trap_interrupt</a>
-    
     <li ><a href="#method-i-configure">#configure</a>
-    
     <li ><a href="#method-i-run">#run</a>
-    
     <li ><a href="#method-i-run_specs">#run_specs</a>
-    
     <li ><a href="#method-i-setup">#setup</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -130,21 +104,15 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
     <section class="attribute-method-details" class="method-section">
       <header>
         <h3>Attributes</h3>
       </header>
 
-      
       <div id="attribute-i-configuration" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">configuration</span><span
@@ -152,12 +120,9 @@
         </div>
 
         <div class="method-description">
-        
         <p>@attr_reader @private</p>
-        
         </div>
       </div>
-      
       <div id="attribute-i-options" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">options</span><span
@@ -165,12 +130,9 @@
         </div>
 
         <div class="method-description">
-        
         <p>@attr_reader @private</p>
-        
         </div>
       </div>
-      
       <div id="attribute-i-world" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">world</span><span
@@ -178,35 +140,25 @@
         </div>
 
         <div class="method-description">
-        
         <p>@attr_reader @private</p>
-        
         </div>
       </div>
-      
     </section>
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-autorun" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">autorun</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Register an `at_exit` hook that runs the suite when the process exits.</p>
 
 <p>@note This is not generally needed. The `rspec` command takes care</p>
@@ -215,10 +167,7 @@
 hook. This is only needed if you are running specs using
 the `ruby` command, and even then, the normal way to invoke
 this is by requiring `rspec/autorun`.</pre>
-          
-          
 
-          
           <div class="method-source-code" id="autorun-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/runner.rb, line 16</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">autorun</span>
@@ -233,99 +182,63 @@ this is by requiring `rspec/autorun`.</pre>
   <span class="ruby-ivar">@installed_at_exit</span> = <span class="ruby-keyword">true</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-autorun_disabled-3F" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">autorun_disabled?</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="autorun_disabled-3F-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/runner.rb, line 141</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">autorun_disabled?</span>
   <span class="ruby-ivar">@autorun_disabled</span> <span class="ruby-operator">||=</span> <span class="ruby-keyword">false</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-disable_autorun-21" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">disable_autorun!</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="disable_autorun-21-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/runner.rb, line 136</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">disable_autorun!</span>
   <span class="ruby-ivar">@autorun_disabled</span> = <span class="ruby-keyword">true</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-handle_interrupt" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">handle_interrupt</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="handle_interrupt-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/runner.rb, line 180</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">handle_interrupt</span>
@@ -337,66 +250,42 @@ this is by requiring `rspec/autorun`.</pre>
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-installed_at_exit-3F" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">installed_at_exit?</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="installed_at_exit-3F-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/runner.rb, line 146</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">installed_at_exit?</span>
   <span class="ruby-ivar">@installed_at_exit</span> <span class="ruby-operator">||=</span> <span class="ruby-keyword">false</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-invoke" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">invoke</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Runs the suite of specs and exits the process with an appropriate exit code.</p>
-          
-          
 
-          
           <div class="method-source-code" id="invoke-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/runner.rb, line 43</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">invoke</span>
@@ -405,33 +294,21 @@ this is by requiring `rspec/autorun`.</pre>
   <span class="ruby-identifier">exit</span>(<span class="ruby-identifier">status</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">status</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-new" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">new</span><span
             class="method-args">(options, configuration=RSpec.configuration, world=RSpec.world)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="new-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/runner.rb, line 75</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">options</span>, <span class="ruby-identifier">configuration</span>=<span class="ruby-constant">RSpec</span>.<span class="ruby-identifier">configuration</span>, <span class="ruby-identifier">world</span>=<span class="ruby-constant">RSpec</span>.<span class="ruby-identifier">world</span>)
@@ -440,33 +317,21 @@ this is by requiring `rspec/autorun`.</pre>
   <span class="ruby-ivar">@world</span>         = <span class="ruby-identifier">world</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-perform_at_exit" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">perform_at_exit</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="perform_at_exit-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/runner.rb, line 29</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">perform_at_exit</span>
@@ -481,28 +346,19 @@ this is by requiring `rspec/autorun`.</pre>
   <span class="ruby-identifier">invoke</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-run" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">run</span><span
             class="method-args">(args, err=$stderr, out=$stdout)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Run a suite of <a href="../../RSpec.html"><code>RSpec</code></a> examples. Does not exit.</p>
 
 <p>This is used internally by <a href="../../RSpec.html"><code>RSpec</code></a> to run a suite, but is available for use by any other automation tool.</p>
@@ -513,10 +369,7 @@ this is by requiring `rspec/autorun`.</pre>
 
 <pre>or the configured failure exit code (1 by default) if specs
 failed.</pre>
-          
-          
 
-          
           <div class="method-source-code" id="run-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/runner.rb, line 64</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">run</span>(<span class="ruby-identifier">args</span>, <span class="ruby-identifier">err</span>=<span class="ruby-identifier">$stderr</span>, <span class="ruby-identifier">out</span>=<span class="ruby-identifier">$stdout</span>)
@@ -530,33 +383,21 @@ failed.</pre>
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-running_in_drb-3F" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">running_in_drb?</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="running_in_drb-3F-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/runner.rb, line 151</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">running_in_drb?</span>
@@ -582,74 +423,49 @@ failed.</pre>
   [<span class="ruby-string">&quot;127.0.0.1&quot;</span>, <span class="ruby-string">&quot;localhost&quot;</span>, <span class="ruby-identifier">local_ipv4</span>].<span class="ruby-identifier">any?</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">addr</span><span class="ruby-operator">|</span> <span class="ruby-identifier">addr</span> <span class="ruby-operator">==</span> <span class="ruby-constant">URI</span>(<span class="ruby-constant">DRb</span>.<span class="ruby-identifier">current_server</span>.<span class="ruby-identifier">uri</span>).<span class="ruby-identifier">host</span> }
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-trap_interrupt" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">trap_interrupt</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="trap_interrupt-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/runner.rb, line 175</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">trap_interrupt</span>
   <span class="ruby-identifier">trap</span>(<span class="ruby-string">&#39;INT&#39;</span>) { <span class="ruby-identifier">handle_interrupt</span> }
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-configure" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">configure</span><span
             class="method-args">(err, out)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="configure-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/runner.rb, line 129</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">configure</span>(<span class="ruby-identifier">err</span>, <span class="ruby-identifier">out</span>)
@@ -658,35 +474,23 @@ failed.</pre>
   <span class="ruby-ivar">@options</span>.<span class="ruby-identifier">configure</span>(<span class="ruby-ivar">@configuration</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-run" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">run</span><span
             class="method-args">(err, out)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Configures and runs a spec suite.</p>
 
 <p>@param err [IO] error stream @param out [IO] output stream</p>
-          
-          
 
-          
           <div class="method-source-code" id="run-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/runner.rb, line 85</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">run</span>(<span class="ruby-identifier">err</span>, <span class="ruby-identifier">out</span>)
@@ -698,38 +502,26 @@ failed.</pre>
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-run_specs" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">run_specs</span><span
             class="method-args">(example_groups)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Runs the provided example groups.</p>
 
 <p>@param example_groups [Array&lt;RSpec::Core::ExampleGroup&gt;] groups to run @return [Fixnum] exit status code. 0 if all specs passed,</p>
 
 <pre>or the configured failure exit code (1 by default) if specs
 failed.</pre>
-          
-          
 
-          
           <div class="method-source-code" id="run_specs-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/runner.rb, line 113</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">run_specs</span>(<span class="ruby-identifier">example_groups</span>)
@@ -747,35 +539,23 @@ failed.</pre>
   <span class="ruby-identifier">success</span> <span class="ruby-operator">?</span> <span class="ruby-value">0</span> <span class="ruby-operator">:</span> <span class="ruby-ivar">@configuration</span>.<span class="ruby-identifier">failure_exit_code</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-setup" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">setup</span><span
             class="method-args">(err, out)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Wires together the various configuration objects and state holders.</p>
 
 <p>@param err [IO] error stream @param out [IO] output stream</p>
-          
-          
 
-          
           <div class="method-source-code" id="setup-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/runner.rb, line 98</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">setup</span>(<span class="ruby-identifier">err</span>, <span class="ruby-identifier">out</span>)
@@ -787,19 +567,14 @@ failed.</pre>
   <span class="ruby-ivar">@world</span>.<span class="ruby-identifier">announce_filters</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

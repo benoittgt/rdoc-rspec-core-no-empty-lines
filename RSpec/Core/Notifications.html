@@ -21,8 +21,6 @@
 <link href="../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="module">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,18 +55,12 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
-
     
-
     
-
     
-
   </div>
 </nav>
 
@@ -83,21 +75,15 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
     <section class="constants-list">
       <header>
         <h3>Constants</h3>
       </header>
       <dl>
-      
         <dt id="DeprecationNotification">DeprecationNotification
-        
         <dd><p>The `DeprecationNotification` is issued by the reporter when a deprecated part of <a href="../../RSpec.html"><code>RSpec</code></a> is encountered. It represents information about the deprecated call site.</p>
 
 <p>@attr message [String] A custom message about the deprecation @attr deprecated [String] A custom message about the deprecation (alias of</p>
@@ -108,10 +94,7 @@
 
 <pre class="ruby"><span class="ruby-identifier">was</span> <span class="ruby-identifier">issued</span>
 </pre>
-        
-      
         <dt id="ExampleNotification">ExampleNotification
-        
         <dd><p>The `ExampleNotification` represents notifications sent by the reporter which contain information about the current (or soon to be) example. It is used by formatters to access information about that example.</p>
 
 <p>@example</p>
@@ -122,10 +105,7 @@
 </pre>
 
 <p>@attr example [RSpec::Core::Example] the current example</p>
-        
-      
         <dt id="GroupNotification">GroupNotification
-        
         <dd><p>The `GroupNotification` represents notifications sent by the reporter which contain information about the currently running (or soon to be) example group. It is used by formatters to access information about that group.</p>
 
 <p>@example</p>
@@ -136,33 +116,21 @@
 </pre>
 
 <p>@attr group [RSpec::Core::ExampleGroup] the current group</p>
-        
-      
         <dt id="MessageNotification">MessageNotification
-        
         <dd><p>The `MessageNotification` encapsulates generic messages that the reporter sends to formatters.</p>
 
 <p>@attr message [String] the message</p>
-        
-      
         <dt id="SeedNotification">SeedNotification
-        
         <dd><p>The `SeedNotification` holds the seed used to randomize examples and whether that seed has been used or not.</p>
 
 <p>@attr seed [Fixnum] the seed used to randomize ordering @attr used [Boolean] whether the seed has been used or not</p>
-        
-      
         <dt id="StartNotification">StartNotification
-        
         <dd><p>The `StartNotification` represents a notification sent by the reporter when the suite is started. It contains the expected amount of examples to be executed, and the load time of <a href="../../RSpec.html"><code>RSpec</code></a>.</p>
 
 <p>@attr count [Fixnum] the number counted @attr load_time [Float] the number of seconds taken to boot <a href="../../RSpec.html"><code>RSpec</code></a></p>
 
 <pre>and load the spec files</pre>
-        
-      
         <dt id="SummaryNotification">SummaryNotification
-        
         <dd><p>The `SummaryNotification` holds information about the results of running a test suite. It is used by formatters to provide information at the end of the test run.</p>
 
 <p>@attr duration [Float] the time taken (in seconds) to run the suite @attr examples [Array&lt;RSpec::Core::Example&gt;] the examples run @attr failed_examples [Array&lt;RSpec::Core::Example&gt;] the failed examples @attr pending_examples [Array&lt;RSpec::Core::Example&gt;] the pending examples @attr load_time [Float] the number of seconds taken to boot <a href="../../RSpec.html"><code>RSpec</code></a></p>
@@ -174,17 +142,12 @@
 <pre class="ruby"><span class="ruby-identifier">have</span> <span class="ruby-identifier">occurred</span> <span class="ruby-identifier">processing</span>
 <span class="ruby-identifier">the</span> <span class="ruby-identifier">spec</span> <span class="ruby-identifier">suite</span>
 </pre>
-        
-      
       </dl>
     </section>
-    
 
-    
 
-    
+
   </section>
-
 </main>
 
 

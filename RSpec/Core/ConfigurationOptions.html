@@ -21,8 +21,6 @@
 <link href="../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="class">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,40 +55,28 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
 <div id="parent-class-section" class="nav-section">
   <h3>Parent</h3>
 
-  
   <p class="link"><a href="../../Object.html">Object</a>
-  
 </div>
 
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-c-new">::new</a>
-    
     <li ><a href="#method-i-configure">#configure</a>
-    
     <li ><a href="#method-i-configure_filter_manager">#configure_filter_manager</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -106,45 +92,28 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
     <section class="constants-list">
       <header>
         <h3>Constants</h3>
       </header>
       <dl>
-      
         <dt id="OPTIONS_ORDER">OPTIONS_ORDER
-        
         <dd>
-        
-      
         <dt id="UNFORCED_OPTIONS">UNFORCED_OPTIONS
-        
         <dd>
-        
-      
         <dt id="UNPROCESSABLE_OPTIONS">UNPROCESSABLE_OPTIONS
-        
         <dd>
-        
-      
       </dl>
     </section>
-    
 
-    
     <section class="attribute-method-details" class="method-section">
       <header>
         <h3>Attributes</h3>
       </header>
 
-      
       <div id="attribute-i-args" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">args</span><span
@@ -152,12 +121,9 @@
         </div>
 
         <div class="method-description">
-        
         <p>@return [Array&lt;String&gt;] the original command-line arguments</p>
-        
         </div>
       </div>
-      
       <div id="attribute-i-options" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">options</span><span
@@ -165,40 +131,27 @@
         </div>
 
         <div class="method-description">
-        
         <p>@return [Hash] the final merged options, drawn from all external sources</p>
-        
         </div>
       </div>
-      
     </section>
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-new" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">new</span><span
             class="method-args">(args)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@param args [Array&lt;String&gt;] command line arguments</p>
-          
-          
 
-          
           <div class="method-source-code" id="new-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/configuration_options.rb, line 12</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">args</span>)
@@ -206,43 +159,30 @@
   <span class="ruby-identifier">organize_options</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-configure" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">configure</span><span
             class="method-args">(config)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Updates the provided {Configuration} instance based on the provided external configuration options.</p>
 
 <p>@param config [Configuration] the configuration instance to update</p>
-          
-          
 
-          
           <div class="method-source-code" id="configure-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/configuration_options.rb, line 21</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">configure</span>(<span class="ruby-identifier">config</span>)
@@ -251,33 +191,21 @@
   <span class="ruby-identifier">load_formatters_into</span> <span class="ruby-identifier">config</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-configure_filter_manager" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">configure_filter_manager</span><span
             class="method-args">(filter_manager)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api private Updates the provided {FilterManager} based on the filter options. @param filter_manager [FilterManager] instance to update</p>
-          
-          
 
-          
           <div class="method-source-code" id="configure_filter_manager-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/configuration_options.rb, line 30</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">configure_filter_manager</span>(<span class="ruby-identifier">filter_manager</span>)
@@ -286,19 +214,14 @@
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

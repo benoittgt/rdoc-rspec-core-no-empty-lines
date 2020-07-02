@@ -21,8 +21,6 @@
 <link href="../../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="class">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,44 +55,30 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
 <div id="parent-class-section" class="nav-section">
   <h3>Parent</h3>
 
-  
   <p class="link"><a href="../../../Object.html">Object</a>
-  
 </div>
 
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-c-formatters">::formatters</a>
-    
     <li ><a href="#method-c-new">::new</a>
-    
     <li ><a href="#method-i-add">#add</a>
-    
     <li ><a href="#method-i-prepare_default">#prepare_default</a>
-    
     <li ><a href="#method-i-setup_default">#setup_default</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -112,21 +96,15 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
     <section class="attribute-method-details" class="method-section">
       <header>
         <h3>Attributes</h3>
       </header>
 
-      
       <div id="attribute-i-default_formatter" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">default_formatter</span><span
@@ -134,12 +112,9 @@
         </div>
 
         <div class="method-description">
-        
         <p>@return [String] the default formatter to setup, defaults to `progress`</p>
-        
         </div>
       </div>
-      
       <div id="attribute-i-formatters" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">formatters</span><span
@@ -147,12 +122,9 @@
         </div>
 
         <div class="method-description">
-        
         <p>@return [Array] the loaded formatters</p>
-        
         </div>
       </div>
-      
       <div id="attribute-i-reporter" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">reporter</span><span
@@ -160,75 +132,50 @@
         </div>
 
         <div class="method-description">
-        
         <p>@return [Reporter] the reporter</p>
-        
         </div>
       </div>
-      
     </section>
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-formatters" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">formatters</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api private</p>
 
 <p>Internal formatters are stored here when loaded.</p>
-          
-          
 
-          
           <div class="method-source-code" id="formatters-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters.rb, line 100</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">formatters</span>
   <span class="ruby-ivar">@formatters</span> <span class="ruby-operator">||=</span> {}
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-new" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">new</span><span
             class="method-args">(reporter)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api private</p>
-          
-          
 
-          
           <div class="method-source-code" id="new-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters.rb, line 105</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">reporter</span>)
@@ -237,41 +184,28 @@
   <span class="ruby-keyword">self</span>.<span class="ruby-identifier">default_formatter</span> = <span class="ruby-string">&#39;progress&#39;</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-add" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">add</span><span
             class="method-args">(formatter_to_use, *paths)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="add-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters.rb, line 144</span>
     <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">add</span>(<span class="ruby-identifier">formatter_to_use</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">paths</span>)
@@ -309,66 +243,42 @@
       <span class="ruby-keyword">end</span>
     <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-prepare_default" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">prepare_default</span><span
             class="method-args">(output_stream, deprecation_stream)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="prepare_default-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters.rb, line 121</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">prepare_default</span>(<span class="ruby-identifier">output_stream</span>, <span class="ruby-identifier">deprecation_stream</span>)
   <span class="ruby-identifier">reporter</span>.<span class="ruby-identifier">prepare_default</span>(<span class="ruby-keyword">self</span>, <span class="ruby-identifier">output_stream</span>, <span class="ruby-identifier">deprecation_stream</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-setup_default" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">setup_default</span><span
             class="method-args">(output_stream, deprecation_stream)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="setup_default-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters.rb, line 126</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">setup_default</span>(<span class="ruby-identifier">output_stream</span>, <span class="ruby-identifier">deprecation_stream</span>)
@@ -388,19 +298,14 @@
   <span class="ruby-identifier">add</span> <span class="ruby-constant">RSpec</span><span class="ruby-operator">::</span><span class="ruby-constant">Core</span><span class="ruby-operator">::</span><span class="ruby-constant">Formatters</span><span class="ruby-operator">::</span><span class="ruby-constant">ProfileFormatter</span>, <span class="ruby-identifier">output_stream</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

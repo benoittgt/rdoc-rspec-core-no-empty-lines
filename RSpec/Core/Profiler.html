@@ -21,8 +21,6 @@
 <link href="../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="class">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,42 +55,29 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
 <div id="parent-class-section" class="nav-section">
   <h3>Parent</h3>
 
-  
   <p class="link"><a href="../../Object.html">Object</a>
-  
 </div>
 
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-c-new">::new</a>
-    
     <li ><a href="#method-i-example_group_finished">#example_group_finished</a>
-    
     <li ><a href="#method-i-example_group_started">#example_group_started</a>
-    
     <li ><a href="#method-i-example_started">#example_started</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -108,35 +93,24 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
     <section class="constants-list">
       <header>
         <h3>Constants</h3>
       </header>
       <dl>
-      
         <dt id="NOTIFICATIONS">NOTIFICATIONS
-        
         <dd>
-        
-      
       </dl>
     </section>
-    
 
-    
     <section class="attribute-method-details" class="method-section">
       <header>
         <h3>Attributes</h3>
       </header>
 
-      
       <div id="attribute-i-example_groups" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">example_groups</span><span
@@ -145,80 +119,54 @@
 
         <div class="method-description">
         
-        
-        
         </div>
       </div>
-      
     </section>
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-new" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">new</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="new-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/profiler.rb, line 7</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>
   <span class="ruby-ivar">@example_groups</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">h</span>, <span class="ruby-identifier">k</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">k</span>] = { <span class="ruby-value">:count</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-value">0</span> } }
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-example_group_finished" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_group_finished</span><span
             class="method-args">(notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="example_group_finished-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/profiler.rb, line 20</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_group_finished</span>(<span class="ruby-identifier">notification</span>)
@@ -229,33 +177,21 @@
   <span class="ruby-identifier">group</span>[<span class="ruby-value">:total_time</span>] = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">group</span>[<span class="ruby-value">:start</span>]
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-example_group_started" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_group_started</span><span
             class="method-args">(notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="example_group_started-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/profiler.rb, line 13</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_group_started</span>(<span class="ruby-identifier">notification</span>)
@@ -265,33 +201,21 @@
   <span class="ruby-ivar">@example_groups</span>[<span class="ruby-identifier">notification</span>.<span class="ruby-identifier">group</span>][<span class="ruby-value">:description</span>] = <span class="ruby-identifier">notification</span>.<span class="ruby-identifier">group</span>.<span class="ruby-identifier">top_level_description</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-example_started" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_started</span><span
             class="method-args">(notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="example_started-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/profiler.rb, line 28</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_started</span>(<span class="ruby-identifier">notification</span>)
@@ -299,19 +223,14 @@
   <span class="ruby-ivar">@example_groups</span>[<span class="ruby-identifier">group</span>][<span class="ruby-value">:count</span>] <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

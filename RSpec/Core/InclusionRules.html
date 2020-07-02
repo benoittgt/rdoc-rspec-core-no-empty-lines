@@ -21,8 +21,6 @@
 <link href="../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="class">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,44 +55,30 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
 <div id="parent-class-section" class="nav-section">
   <h3>Parent</h3>
 
-  
   <p class="link"><a href="FilterRules.html">RSpec::Core::FilterRules</a>
-  
 </div>
 
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li class="calls-super" ><a href="#method-i-add">#add</a>
-    
     <li class="calls-super" ><a href="#method-i-add_with_low_priority">#add_with_low_priority</a>
-    
     <li class="calls-super" ><a href="#method-i-include_example-3F">#include_example?</a>
-    
     <li ><a href="#method-i-split_file_scoped_rules">#split_file_scoped_rules</a>
-    
     <li ><a href="#method-i-standalone-3F">#standalone?</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -110,155 +94,102 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
 
-    
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-add" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">add</span><span
             class="method-args">(*args)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
-          
-          
           
             <div class="method-calls-super">
               Calls superclass method
               <a href="FilterRules.html#method-i-add"><code>RSpec::Core::FilterRules#add</code></a>
             </div>
-          
 
-          
           <div class="method-source-code" id="add-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/filter_manager.rb, line 187</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">add</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
   <span class="ruby-identifier">apply_standalone_filter</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>) <span class="ruby-operator">||</span> <span class="ruby-keyword">super</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-add_with_low_priority" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">add_with_low_priority</span><span
             class="method-args">(*args)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
-          
-          
           
             <div class="method-calls-super">
               Calls superclass method
               <a href="FilterRules.html#method-i-add_with_low_priority"><code>RSpec::Core::FilterRules#add_with_low_priority</code></a>
             </div>
-          
 
-          
           <div class="method-source-code" id="add_with_low_priority-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/filter_manager.rb, line 191</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">add_with_low_priority</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
   <span class="ruby-identifier">apply_standalone_filter</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>) <span class="ruby-operator">||</span> <span class="ruby-keyword">super</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-include_example-3F" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">include_example?</span><span
             class="method-args">(example)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
-          
-          
           
             <div class="method-calls-super">
               Calls superclass method
               <a href="FilterRules.html#method-i-include_example-3F"><code>RSpec::Core::FilterRules#include_example?</code></a>
             </div>
-          
 
-          
           <div class="method-source-code" id="include_example-3F-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/filter_manager.rb, line 195</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">include_example?</span>(<span class="ruby-identifier">example</span>)
   <span class="ruby-ivar">@rules</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-operator">||</span> <span class="ruby-keyword">super</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-split_file_scoped_rules" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">split_file_scoped_rules</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="split_file_scoped_rules-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/filter_manager.rb, line 203</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">split_file_scoped_rules</span>
@@ -269,52 +200,35 @@
   <span class="ruby-keyword">return</span> <span class="ruby-identifier">locations</span>, <span class="ruby-identifier">ids</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">rules_dup</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-standalone-3F" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">standalone?</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="standalone-3F-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/filter_manager.rb, line 199</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">standalone?</span>
   <span class="ruby-identifier">is_standalone_filter?</span>(<span class="ruby-ivar">@rules</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

@@ -21,8 +21,6 @@
 <link href="../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="module">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,36 +55,24 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-c-mark_fixed-21">::mark_fixed!</a>
-    
     <li ><a href="#method-c-mark_pending-21">::mark_pending!</a>
-    
     <li ><a href="#method-c-mark_skipped-21">::mark_skipped!</a>
-    
     <li ><a href="#method-i-pending">#pending</a>
-    
     <li ><a href="#method-i-skip">#skip</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -102,101 +88,67 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
     <section class="constants-list">
       <header>
         <h3>Constants</h3>
       </header>
       <dl>
-      
         <dt id="NOT_YET_IMPLEMENTED">NOT_YET_IMPLEMENTED
-        
         <dd><p>@private</p>
-        
-      
         <dt id="NO_REASON_GIVEN">NO_REASON_GIVEN
-        
         <dd><p>@private</p>
-        
-      
       </dl>
     </section>
-    
 
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-mark_fixed-21" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">mark_fixed!</span><span
             class="method-args">(example)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
 
 <p>Mark example as fixed.</p>
 
 <p>@param example [RSpec::Core::Example] the example to mark as fixed</p>
-          
-          
 
-          
           <div class="method-source-code" id="mark_fixed-21-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/pending.rb, line 160</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">mark_fixed!</span>(<span class="ruby-identifier">example</span>)
   <span class="ruby-identifier">example</span>.<span class="ruby-identifier">execution_result</span>.<span class="ruby-identifier">pending_fixed</span> = <span class="ruby-keyword">true</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-mark_pending-21" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">mark_pending!</span><span
             class="method-args">(example, message_or_bool)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
 
 <p>Mark example as pending.</p>
 
 <p>@param example [RSpec::Core::Example] the example to mark as pending @param message_or_bool [Boolean, String] the message to use, or true</p>
-          
-          
 
-          
           <div class="method-source-code" id="mark_pending-21-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/pending.rb, line 143</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">mark_pending!</span>(<span class="ruby-identifier">example</span>, <span class="ruby-identifier">message_or_bool</span>)
@@ -211,37 +163,25 @@
   <span class="ruby-identifier">example</span>.<span class="ruby-identifier">execution_result</span>.<span class="ruby-identifier">pending_fixed</span> = <span class="ruby-keyword">false</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-mark_skipped-21" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">mark_skipped!</span><span
             class="method-args">(example, message_or_bool)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
 
 <p>Mark example as skipped.</p>
 
 <p>@param example [RSpec::Core::Example] the example to mark as skipped @param message_or_bool [Boolean, String] the message to use, or true</p>
-          
-          
 
-          
           <div class="method-source-code" id="mark_skipped-21-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/pending.rb, line 132</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">mark_skipped!</span>(<span class="ruby-identifier">example</span>, <span class="ruby-identifier">message_or_bool</span>)
@@ -249,36 +189,26 @@
   <span class="ruby-identifier">example</span>.<span class="ruby-identifier">metadata</span>[<span class="ruby-value">:skip</span>] = <span class="ruby-keyword">true</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-pending" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">pending</span><span
             class="method-args">(message=nil)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@overload pending() @overload pending(message)</p>
 
 <p>Marks an example as pending. The rest of the example will still be executed, and if it passes the example will fail to indicate that the pending can be removed.</p>
@@ -318,10 +248,7 @@ message to the summary report:
     it &quot;does something&quot;, :pending =&gt; &quot;something else getting finished&quot; do
       # ...
     end</pre>
-          
-          
 
-          
           <div class="method-source-code" id="pending-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/pending.rb, line 70</span>
       <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">pending</span>(<span class="ruby-identifier">message</span>=<span class="ruby-keyword">nil</span>)
@@ -353,28 +280,19 @@ message to the summary report:
         <span class="ruby-keyword">end</span>
       <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-skip" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">skip</span><span
             class="method-args">(message=nil)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@overload skip() @overload skip(message)</p>
 
 <p>Marks an example as pending and skips execution.</p>
@@ -395,10 +313,7 @@ message to the summary report:
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span>
 </pre>
-          
-          
 
-          
           <div class="method-source-code" id="skip-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/pending.rb, line 118</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">skip</span>(<span class="ruby-identifier">message</span>=<span class="ruby-keyword">nil</span>)
@@ -409,19 +324,14 @@ message to the summary report:
   <span class="ruby-identifier">raise</span> <span class="ruby-constant">SkipDeclaredInExample</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">message</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

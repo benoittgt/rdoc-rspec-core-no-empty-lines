@@ -21,8 +21,6 @@
 <link href="../../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="class">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,52 +55,34 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
 <div id="parent-class-section" class="nav-section">
   <h3>Parent</h3>
 
-  
   <p class="link"><a href="BaseFormatter.html">RSpec::Core::Formatters::BaseFormatter</a>
-  
 </div>
 
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li class="calls-super" ><a href="#method-c-new">::new</a>
-    
     <li ><a href="#method-i-close">#close</a>
-    
     <li ><a href="#method-i-dump_profile">#dump_profile</a>
-    
     <li ><a href="#method-i-dump_profile_slowest_example_groups">#dump_profile_slowest_example_groups</a>
-    
     <li ><a href="#method-i-dump_profile_slowest_examples">#dump_profile_slowest_examples</a>
-    
     <li ><a href="#method-i-dump_summary">#dump_summary</a>
-    
     <li ><a href="#method-i-message">#message</a>
-    
     <li ><a href="#method-i-seed">#seed</a>
-    
     <li ><a href="#method-i-stop">#stop</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -118,21 +98,15 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
     <section class="attribute-method-details" class="method-section">
       <header>
         <h3>Attributes</h3>
       </header>
 
-      
       <div id="attribute-i-output_hash" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">output_hash</span><span
@@ -141,44 +115,30 @@
 
         <div class="method-description">
         
-        
-        
         </div>
       </div>
-      
     </section>
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-new" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">new</span><span
             class="method-args">(output)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
-          
-          
           
             <div class="method-calls-super">
               Calls superclass method
               <a href="BaseFormatter.html#method-c-new"><code>RSpec::Core::Formatters::BaseFormatter::new</code></a>
             </div>
-          
 
-          
           <div class="method-source-code" id="new-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/json_formatter.rb, line 13</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">output</span>)
@@ -188,74 +148,49 @@
   }
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-close" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">close</span><span
             class="method-args">(_notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="close-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/json_formatter.rb, line 55</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">close</span>(<span class="ruby-identifier">_notification</span>)
   <span class="ruby-identifier">output</span>.<span class="ruby-identifier">write</span> <span class="ruby-ivar">@output_hash</span>.<span class="ruby-identifier">to_json</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-dump_profile" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">dump_profile</span><span
             class="method-args">(profile)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="dump_profile-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/json_formatter.rb, line 59</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">dump_profile</span>(<span class="ruby-identifier">profile</span>)
@@ -264,33 +199,21 @@
   <span class="ruby-identifier">dump_profile_slowest_example_groups</span>(<span class="ruby-identifier">profile</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-dump_profile_slowest_example_groups" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">dump_profile_slowest_example_groups</span><span
             class="method-args">(profile)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api private</p>
-          
-          
 
-          
           <div class="method-source-code" id="dump_profile_slowest_example_groups-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/json_formatter.rb, line 78</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">dump_profile_slowest_example_groups</span>(<span class="ruby-identifier">profile</span>)
@@ -300,33 +223,21 @@
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-dump_profile_slowest_examples" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">dump_profile_slowest_examples</span><span
             class="method-args">(profile)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api private</p>
-          
-          
 
-          
           <div class="method-source-code" id="dump_profile_slowest_examples-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/json_formatter.rb, line 66</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">dump_profile_slowest_examples</span>(<span class="ruby-identifier">profile</span>)
@@ -340,33 +251,21 @@
   <span class="ruby-ivar">@output_hash</span>[<span class="ruby-value">:profile</span>][<span class="ruby-value">:total</span>] = <span class="ruby-identifier">profile</span>.<span class="ruby-identifier">duration</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-dump_summary" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">dump_summary</span><span
             class="method-args">(summary)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="dump_summary-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/json_formatter.rb, line 24</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">dump_summary</span>(<span class="ruby-identifier">summary</span>)
@@ -380,66 +279,42 @@
   <span class="ruby-ivar">@output_hash</span>[<span class="ruby-value">:summary_line</span>] = <span class="ruby-identifier">summary</span>.<span class="ruby-identifier">totals_line</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-message" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">message</span><span
             class="method-args">(notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="message-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/json_formatter.rb, line 20</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">message</span>(<span class="ruby-identifier">notification</span>)
   (<span class="ruby-ivar">@output_hash</span>[<span class="ruby-value">:messages</span>] <span class="ruby-operator">||=</span> []) <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">notification</span>.<span class="ruby-identifier">message</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-seed" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">seed</span><span
             class="method-args">(notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="seed-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/json_formatter.rb, line 50</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">seed</span>(<span class="ruby-identifier">notification</span>)
@@ -447,33 +322,21 @@
   <span class="ruby-ivar">@output_hash</span>[<span class="ruby-value">:seed</span>] = <span class="ruby-identifier">notification</span>.<span class="ruby-identifier">seed</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-stop" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">stop</span><span
             class="method-args">(notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="stop-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/json_formatter.rb, line 35</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">stop</span>(<span class="ruby-identifier">notification</span>)
@@ -491,19 +354,14 @@
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

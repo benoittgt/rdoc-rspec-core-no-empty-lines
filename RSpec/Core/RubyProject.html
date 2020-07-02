@@ -21,8 +21,6 @@
 <link href="../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="module">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,38 +55,25 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-c-add_dir_to_load_path">::add_dir_to_load_path</a>
-    
     <li ><a href="#method-c-add_to_load_path">::add_to_load_path</a>
-    
     <li ><a href="#method-c-ascend_until">::ascend_until</a>
-    
     <li ><a href="#method-c-determine_root">::determine_root</a>
-    
     <li ><a href="#method-c-find_first_parent_containing">::find_first_parent_containing</a>
-    
     <li ><a href="#method-c-root">::root</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -104,107 +89,69 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-add_dir_to_load_path" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">add_dir_to_load_path</span><span
             class="method-args">(dir)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="add_dir_to_load_path-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/ruby_project.rb, line 12</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">add_dir_to_load_path</span>(<span class="ruby-identifier">dir</span>)
   <span class="ruby-identifier">$LOAD_PATH</span>.<span class="ruby-identifier">unshift</span>(<span class="ruby-identifier">dir</span>) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">$LOAD_PATH</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">dir</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-add_to_load_path" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">add_to_load_path</span><span
             class="method-args">(*dirs)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="add_to_load_path-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/ruby_project.rb, line 8</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">add_to_load_path</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">dirs</span>)
   <span class="ruby-identifier">dirs</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">dir</span><span class="ruby-operator">|</span> <span class="ruby-identifier">add_dir_to_load_path</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-identifier">root</span>, <span class="ruby-identifier">dir</span>)) }
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-ascend_until" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">ascend_until</span><span
             class="method-args">() { |path| ... }</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="ascend_until-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/ruby_project.rb, line 28</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">ascend_until</span>
@@ -224,118 +171,77 @@
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-determine_root" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">determine_root</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="determine_root-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/ruby_project.rb, line 20</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">determine_root</span>
   <span class="ruby-identifier">find_first_parent_containing</span>(<span class="ruby-string">&#39;spec&#39;</span>) <span class="ruby-operator">||</span> <span class="ruby-string">&#39;.&#39;</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-find_first_parent_containing" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">find_first_parent_containing</span><span
             class="method-args">(dir)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="find_first_parent_containing-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/ruby_project.rb, line 24</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">find_first_parent_containing</span>(<span class="ruby-identifier">dir</span>)
   <span class="ruby-identifier">ascend_until</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">path</span><span class="ruby-operator">|</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">dir</span>)) }
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-root" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">root</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="root-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/ruby_project.rb, line 16</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">root</span>
   <span class="ruby-ivar">@project_root</span> <span class="ruby-operator">||=</span> <span class="ruby-identifier">determine_root</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

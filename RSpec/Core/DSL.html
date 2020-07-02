@@ -21,8 +21,6 @@
 <link href="../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="module">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,40 +55,26 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-c-change_global_dsl">::change_global_dsl</a>
-    
     <li ><a href="#method-c-example_group_aliases">::example_group_aliases</a>
-    
     <li ><a href="#method-c-expose_example_group_alias">::expose_example_group_alias</a>
-    
     <li ><a href="#method-c-expose_example_group_alias_globally">::expose_example_group_alias_globally</a>
-    
     <li ><a href="#method-c-expose_globally-21">::expose_globally!</a>
-    
     <li ><a href="#method-c-exposed_globally-3F">::exposed_globally?</a>
-    
     <li ><a href="#method-c-remove_globally-21">::remove_globally!</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -121,21 +105,15 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
     <section class="attribute-method-details" class="method-section">
       <header>
         <h3>Attributes</h3>
       </header>
 
-      
       <div id="attribute-c-top_level" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">top_level</span><span
@@ -143,40 +121,27 @@
         </div>
 
         <div class="method-description">
-        
         <p>@private</p>
-        
         </div>
       </div>
-      
     </section>
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-change_global_dsl" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">change_global_dsl</span><span
             class="method-args">(&amp;changes)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="change_global_dsl-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/dsl.rb, line 89</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">change_global_dsl</span>(<span class="ruby-operator">&amp;</span><span class="ruby-identifier">changes</span>)
@@ -184,66 +149,42 @@
   <span class="ruby-constant">Module</span>.<span class="ruby-identifier">class_exec</span>(<span class="ruby-operator">&amp;</span><span class="ruby-identifier">changes</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-example_group_aliases" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_group_aliases</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="example_group_aliases-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/dsl.rb, line 27</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">example_group_aliases</span>
   <span class="ruby-ivar">@example_group_aliases</span> <span class="ruby-operator">||=</span> []
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-expose_example_group_alias" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">expose_example_group_alias</span><span
             class="method-args">(name)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="expose_example_group_alias-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/dsl.rb, line 37</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">expose_example_group_alias</span>(<span class="ruby-identifier">name</span>)
@@ -260,33 +201,21 @@
   <span class="ruby-identifier">expose_example_group_alias_globally</span>(<span class="ruby-identifier">name</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">exposed_globally?</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-expose_example_group_alias_globally" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">expose_example_group_alias_globally</span><span
             class="method-args">(method_name)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="expose_example_group_alias_globally-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/dsl.rb, line 81</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">expose_example_group_alias_globally</span>(<span class="ruby-identifier">method_name</span>)
@@ -296,33 +225,21 @@
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-expose_globally-21" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">expose_globally!</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Adds the describe method to Module and the top level binding. @api private</p>
-          
-          
 
-          
           <div class="method-source-code" id="expose_globally-21-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/dsl.rb, line 58</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">expose_globally!</span>
@@ -335,66 +252,42 @@
   <span class="ruby-ivar">@exposed_globally</span> = <span class="ruby-keyword">true</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-exposed_globally-3F" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">exposed_globally?</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="exposed_globally-3F-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/dsl.rb, line 32</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">exposed_globally?</span>
   <span class="ruby-ivar">@exposed_globally</span> <span class="ruby-operator">||=</span> <span class="ruby-keyword">false</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-remove_globally-21" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">remove_globally!</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Removes the describe method from Module and the top level binding. @api private</p>
-          
-          
 
-          
           <div class="method-source-code" id="remove_globally-21-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/dsl.rb, line 70</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">remove_globally!</span>
@@ -407,19 +300,14 @@
   <span class="ruby-ivar">@exposed_globally</span> = <span class="ruby-keyword">false</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

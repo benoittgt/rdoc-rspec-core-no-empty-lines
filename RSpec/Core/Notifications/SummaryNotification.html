@@ -21,8 +21,6 @@
 <link href="../../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="class">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,64 +55,42 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
 <div id="parent-class-section" class="nav-section">
   <h3>Parent</h3>
 
-  
   <p class="link"><a href="../../../Object.html">Object</a>
-  
 </div>
-
 
     
 <div id="includes-section" class="nav-section">
   <h3>Included Modules</h3>
 
   <ul class="link-list">
-  
-  
     <li><a class="include" href="../ShellEscape.html">RSpec::Core::ShellEscape</a>
-  
-  
   </ul>
 </div>
 
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-i-colorized_rerun_commands">#colorized_rerun_commands</a>
-    
     <li ><a href="#method-i-colorized_totals_line">#colorized_totals_line</a>
-    
     <li ><a href="#method-i-example_count">#example_count</a>
-    
     <li ><a href="#method-i-failure_count">#failure_count</a>
-    
     <li ><a href="#method-i-formatted_duration">#formatted_duration</a>
-    
     <li ><a href="#method-i-formatted_load_time">#formatted_load_time</a>
-    
     <li ><a href="#method-i-fully_formatted">#fully_formatted</a>
-    
     <li ><a href="#method-i-pending_count">#pending_count</a>
-    
     <li ><a href="#method-i-totals_line">#totals_line</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -128,36 +104,25 @@
     
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
 
-    
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-colorized_rerun_commands" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">colorized_rerun_commands</span><span
             class="method-args">(colorizer=::RSpec::Core::Formatters::ConsoleCodes)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api public</p>
 
 <p>Formats failures into a rerunable command format.</p>
@@ -167,10 +132,7 @@
 <pre>specific colors.</pre>
 
 <p>@return [String] A colorized summary line.</p>
-          
-          
 
-          
           <div class="method-source-code" id="colorized_rerun_commands-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/notifications.rb, line 362</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">colorized_rerun_commands</span>(<span class="ruby-identifier">colorizer</span>=<span class="ruby-operator">::</span><span class="ruby-constant">RSpec</span><span class="ruby-operator">::</span><span class="ruby-constant">Core</span><span class="ruby-operator">::</span><span class="ruby-constant">Formatters</span><span class="ruby-operator">::</span><span class="ruby-constant">ConsoleCodes</span>)
@@ -181,28 +143,19 @@
   <span class="ruby-keyword">end</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">&quot;\n&quot;</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-colorized_totals_line" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">colorized_totals_line</span><span
             class="method-args">(colorizer=::RSpec::Core::Formatters::ConsoleCodes)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api public</p>
 
 <p>Wraps the results line with colors based on the configured colors for failure, pending, and success. Defaults to red, yellow, green accordingly.</p>
@@ -212,10 +165,7 @@
 <pre>specific colors.</pre>
 
 <p>@return [String] A colorized results line.</p>
-          
-          
 
-          
           <div class="method-source-code" id="colorized_totals_line-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/notifications.rb, line 345</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">colorized_totals_line</span>(<span class="ruby-identifier">colorizer</span>=<span class="ruby-operator">::</span><span class="ruby-constant">RSpec</span><span class="ruby-operator">::</span><span class="ruby-constant">Core</span><span class="ruby-operator">::</span><span class="ruby-constant">Formatters</span><span class="ruby-operator">::</span><span class="ruby-constant">ConsoleCodes</span>)
@@ -228,172 +178,112 @@
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-example_count" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_count</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api @return [Fixnum] the number of examples run</p>
-          
-          
 
-          
           <div class="method-source-code" id="example_count-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/notifications.rb, line 304</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_count</span>
   <span class="ruby-ivar">@example_count</span> <span class="ruby-operator">||=</span> <span class="ruby-identifier">examples</span>.<span class="ruby-identifier">size</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-failure_count" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">failure_count</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api @return [Fixnum] the number of failed examples</p>
-          
-          
 
-          
           <div class="method-source-code" id="failure_count-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/notifications.rb, line 310</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">failure_count</span>
   <span class="ruby-ivar">@failure_count</span> <span class="ruby-operator">||=</span> <span class="ruby-identifier">failed_examples</span>.<span class="ruby-identifier">size</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-formatted_duration" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">formatted_duration</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@return [String] a formatted version of the time it took to run the</p>
 
 <pre class="ruby"><span class="ruby-identifier">suite</span>
 </pre>
-          
-          
 
-          
           <div class="method-source-code" id="formatted_duration-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/notifications.rb, line 372</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">formatted_duration</span>
   <span class="ruby-constant">Formatters</span><span class="ruby-operator">::</span><span class="ruby-constant">Helpers</span>.<span class="ruby-identifier">format_duration</span>(<span class="ruby-identifier">duration</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-formatted_load_time" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">formatted_load_time</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@return [String] a formatted version of the time it took to boot <a href="../../../RSpec.html"><code>RSpec</code></a></p>
 
 <pre>and load the spec files</pre>
-          
-          
 
-          
           <div class="method-source-code" id="formatted_load_time-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/notifications.rb, line 378</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">formatted_load_time</span>
   <span class="ruby-constant">Formatters</span><span class="ruby-operator">::</span><span class="ruby-constant">Helpers</span>.<span class="ruby-identifier">format_duration</span>(<span class="ruby-identifier">load_time</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-fully_formatted" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">fully_formatted</span><span
             class="method-args">(colorizer=::RSpec::Core::Formatters::ConsoleCodes)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@return [String] The summary information fully formatted in the way that</p>
 
 <pre>RSpec&#39;s built-in formatters emit.</pre>
-          
-          
 
-          
           <div class="method-source-code" id="fully_formatted-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/notifications.rb, line 384</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">fully_formatted</span>(<span class="ruby-identifier">colorizer</span>=<span class="ruby-operator">::</span><span class="ruby-constant">RSpec</span><span class="ruby-operator">::</span><span class="ruby-constant">Core</span><span class="ruby-operator">::</span><span class="ruby-constant">Formatters</span><span class="ruby-operator">::</span><span class="ruby-constant">ConsoleCodes</span>)
@@ -408,66 +298,42 @@
   <span class="ruby-identifier">formatted</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-pending_count" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">pending_count</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api @return [Fixnum] the number of pending examples</p>
-          
-          
 
-          
           <div class="method-source-code" id="pending_count-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/notifications.rb, line 316</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">pending_count</span>
   <span class="ruby-ivar">@pending_count</span> <span class="ruby-operator">||=</span> <span class="ruby-identifier">pending_examples</span>.<span class="ruby-identifier">size</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-totals_line" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">totals_line</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api @return [String] A line summarising the result totals of the spec run.</p>
-          
-          
 
-          
           <div class="method-source-code" id="totals_line-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/notifications.rb, line 322</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">totals_line</span>
@@ -484,19 +350,14 @@
   <span class="ruby-identifier">summary</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

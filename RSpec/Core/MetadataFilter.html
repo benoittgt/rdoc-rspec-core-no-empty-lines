@@ -21,8 +21,6 @@
 <link href="../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="module">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,32 +55,22 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-c-apply-3F">::apply?</a>
-    
     <li ><a href="#method-c-filter_applies-3F">::filter_applies?</a>
-    
     <li ><a href="#method-c-silence_metadata_example_group_deprecations">::silence_metadata_example_group_deprecations</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -98,74 +86,48 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-apply-3F" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">apply?</span><span
             class="method-args">(predicate, filters, metadata)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="apply-3F-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/metadata_filter.rb, line 11</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">apply?</span>(<span class="ruby-identifier">predicate</span>, <span class="ruby-identifier">filters</span>, <span class="ruby-identifier">metadata</span>)
   <span class="ruby-identifier">filters</span>.<span class="ruby-identifier">__send__</span>(<span class="ruby-identifier">predicate</span>) { <span class="ruby-operator">|</span><span class="ruby-identifier">k</span>, <span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">filter_applies?</span>(<span class="ruby-identifier">k</span>, <span class="ruby-identifier">v</span>, <span class="ruby-identifier">metadata</span>) }
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-filter_applies-3F" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">filter_applies?</span><span
             class="method-args">(key, filter_value, metadata)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="filter_applies-3F-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/metadata_filter.rb, line 16</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">filter_applies?</span>(<span class="ruby-identifier">key</span>, <span class="ruby-identifier">filter_value</span>, <span class="ruby-identifier">metadata</span>)
@@ -184,33 +146,21 @@
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-silence_metadata_example_group_deprecations" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">silence_metadata_example_group_deprecations</span><span
             class="method-args">() { || ... }</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="silence_metadata_example_group_deprecations-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/metadata_filter.rb, line 33</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">silence_metadata_example_group_deprecations</span>
@@ -220,19 +170,14 @@
   <span class="ruby-constant">RSpec</span><span class="ruby-operator">::</span><span class="ruby-constant">Support</span>.<span class="ruby-identifier">thread_local_data</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:silence_metadata_example_group_deprecations</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

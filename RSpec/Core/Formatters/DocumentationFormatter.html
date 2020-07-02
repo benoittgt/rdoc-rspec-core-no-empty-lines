@@ -21,8 +21,6 @@
 <link href="../../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="class">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,50 +55,33 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
 <div id="parent-class-section" class="nav-section">
   <h3>Parent</h3>
 
-  
   <p class="link"><a href="BaseTextFormatter.html">RSpec::Core::Formatters::BaseTextFormatter</a>
-  
 </div>
 
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li class="calls-super" ><a href="#method-c-new">::new</a>
-    
     <li ><a href="#method-i-example_failed">#example_failed</a>
-    
     <li ><a href="#method-i-example_group_finished">#example_group_finished</a>
-    
     <li ><a href="#method-i-example_group_started">#example_group_started</a>
-    
     <li ><a href="#method-i-example_passed">#example_passed</a>
-    
     <li ><a href="#method-i-example_pending">#example_pending</a>
-    
     <li ><a href="#method-i-example_started">#example_started</a>
-    
     <li ><a href="#method-i-message">#message</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -116,46 +97,31 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-new" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">new</span><span
             class="method-args">(output)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
-          
-          
           
             <div class="method-calls-super">
               Calls superclass method
               <a href="BaseFormatter.html#method-c-new"><code>RSpec::Core::Formatters::BaseFormatter::new</code></a>
             </div>
-          
 
-          
           <div class="method-source-code" id="new-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/documentation_formatter.rb, line 12</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">output</span>)
@@ -166,41 +132,28 @@
   <span class="ruby-ivar">@messages</span> = []
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-example_failed" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_failed</span><span
             class="method-args">(failure)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="example_failed-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/documentation_formatter.rb, line 50</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_failed</span>(<span class="ruby-identifier">failure</span>)
@@ -210,66 +163,42 @@
   <span class="ruby-ivar">@example_running</span> = <span class="ruby-keyword">false</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-example_group_finished" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_group_finished</span><span
             class="method-args">(_notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="example_group_finished-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/documentation_formatter.rb, line 31</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_group_finished</span>(<span class="ruby-identifier">_notification</span>)
   <span class="ruby-ivar">@group_level</span> <span class="ruby-operator">-=</span> <span class="ruby-value">1</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@group_level</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-example_group_started" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_group_started</span><span
             class="method-args">(notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="example_group_started-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/documentation_formatter.rb, line 24</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_group_started</span>(<span class="ruby-identifier">notification</span>)
@@ -279,33 +208,21 @@
   <span class="ruby-ivar">@group_level</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-example_passed" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_passed</span><span
             class="method-args">(passed)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="example_passed-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/documentation_formatter.rb, line 35</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_passed</span>(<span class="ruby-identifier">passed</span>)
@@ -315,33 +232,21 @@
   <span class="ruby-ivar">@example_running</span> = <span class="ruby-keyword">false</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-example_pending" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_pending</span><span
             class="method-args">(pending)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="example_pending-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/documentation_formatter.rb, line 42</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_pending</span>(<span class="ruby-identifier">pending</span>)
@@ -352,66 +257,42 @@
   <span class="ruby-ivar">@example_running</span> = <span class="ruby-keyword">false</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-example_started" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_started</span><span
             class="method-args">(_notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="example_started-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/documentation_formatter.rb, line 20</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_started</span>(<span class="ruby-identifier">_notification</span>)
   <span class="ruby-ivar">@example_running</span> = <span class="ruby-keyword">true</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-message" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">message</span><span
             class="method-args">(notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="message-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/documentation_formatter.rb, line 57</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">message</span>(<span class="ruby-identifier">notification</span>)
@@ -422,19 +303,14 @@
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

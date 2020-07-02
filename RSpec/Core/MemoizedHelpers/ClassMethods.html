@@ -21,8 +21,6 @@
 <link href="../../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="module">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,34 +55,23 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li class="calls-super" ><a href="#method-i-let">#let</a>
-    
     <li ><a href="#method-i-let-21">#let!</a>
-    
     <li ><a href="#method-i-subject">#subject</a>
-    
     <li ><a href="#method-i-subject-21">#subject!</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -100,36 +87,25 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
 
-    
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-let" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">let</span><span
             class="method-args">(name, &amp;block)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Generates a method whose return value is memoized after the first call. Useful for reducing duplication between examples that assign values to the same local variable.</p>
 
 <p>@note `let` <em>can</em> enhance readability when used sparingly (1,2, or</p>
@@ -163,15 +139,11 @@ intended to be used in a `before(:context)` hook.</pre>
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span>
 </pre>
-          
-          
             <div class="method-calls-super">
               Calls superclass method
               
             </div>
-          
 
-          
           <div class="method-source-code" id="let-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/memoized_helpers.rb, line 284</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">let</span>(<span class="ruby-identifier">name</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
@@ -211,28 +183,19 @@ intended to be used in a `before(:context)` hook.</pre>
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-let-21" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">let!</span><span
             class="method-args">(name, &amp;block)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Just like `let`, except the block is invoked by an implicit `before` hook. This serves a dual purpose of setting up state and providing a memoized reference to that state.</p>
 
 <p>@example</p>
@@ -285,10 +248,7 @@ intended to be used in a `before(:context)` hook.</pre>
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span>
 </pre>
-          
-          
 
-          
           <div class="method-source-code" id="let-21-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/memoized_helpers.rb, line 374</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">let!</span>(<span class="ruby-identifier">name</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
@@ -296,28 +256,19 @@ intended to be used in a `before(:context)` hook.</pre>
   <span class="ruby-identifier">before</span> { <span class="ruby-identifier">__send__</span>(<span class="ruby-identifier">name</span>) }
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-subject" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">subject</span><span
             class="method-args">(name=nil, &amp;block)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Declares a `subject` for an example group which can then be wrapped with `expect` using `is_expected` to make it the target of an expectation in a concise, one-line example.</p>
 
 <p>Given a `name`, defines a method with that name which returns the `subject`. This lets you declare the subject once and access it implicitly in one-liners and explicitly using an intention revealing name.</p>
@@ -355,10 +306,7 @@ that spawn separate threads. Specify this on `RSpec.configure`</pre>
 </pre>
 
 <p>@see <a href="../MemoizedHelpers.html#method-i-should"><code>MemoizedHelpers#should</code></a> @see <a href="../MemoizedHelpers.html#method-i-should_not"><code>MemoizedHelpers#should_not</code></a> @see <a href="../MemoizedHelpers.html#method-i-is_expected"><code>MemoizedHelpers#is_expected</code></a></p>
-          
-          
 
-          
           <div class="method-source-code" id="subject-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/memoized_helpers.rb, line 418</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">subject</span>(<span class="ruby-identifier">name</span>=<span class="ruby-keyword">nil</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
@@ -374,28 +322,19 @@ that spawn separate threads. Specify this on `RSpec.configure`</pre>
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-subject-21" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">subject!</span><span
             class="method-args">(name=nil, &amp;block)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Just like `subject`, except the block is invoked by an implicit `before` hook. This serves a dual purpose of setting up state and providing a memoized reference to that state.</p>
 
 <p>@example</p>
@@ -448,10 +387,7 @@ that spawn separate threads. Specify this on `RSpec.configure`</pre>
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span>
 </pre>
-          
-          
 
-          
           <div class="method-source-code" id="subject-21-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/memoized_helpers.rb, line 484</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">subject!</span>(<span class="ruby-identifier">name</span>=<span class="ruby-keyword">nil</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
@@ -459,19 +395,14 @@ that spawn separate threads. Specify this on `RSpec.configure`</pre>
   <span class="ruby-identifier">before</span> { <span class="ruby-identifier">subject</span> }
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

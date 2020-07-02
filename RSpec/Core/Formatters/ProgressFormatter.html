@@ -21,8 +21,6 @@
 <link href="../../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="class">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,42 +55,29 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
 <div id="parent-class-section" class="nav-section">
   <h3>Parent</h3>
 
-  
   <p class="link"><a href="BaseTextFormatter.html">RSpec::Core::Formatters::BaseTextFormatter</a>
-  
 </div>
 
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-i-example_failed">#example_failed</a>
-    
     <li ><a href="#method-i-example_passed">#example_passed</a>
-    
     <li ><a href="#method-i-example_pending">#example_pending</a>
-    
     <li ><a href="#method-i-start_dump">#start_dump</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -108,159 +93,104 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
 
-    
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-example_failed" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_failed</span><span
             class="method-args">(_notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="example_failed-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/progress_formatter.rb, line 19</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_failed</span>(<span class="ruby-identifier">_notification</span>)
   <span class="ruby-identifier">output</span>.<span class="ruby-identifier">print</span> <span class="ruby-constant">ConsoleCodes</span>.<span class="ruby-identifier">wrap</span>(<span class="ruby-string">&#39;F&#39;</span>, <span class="ruby-value">:failure</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-example_passed" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_passed</span><span
             class="method-args">(_notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="example_passed-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/progress_formatter.rb, line 11</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_passed</span>(<span class="ruby-identifier">_notification</span>)
   <span class="ruby-identifier">output</span>.<span class="ruby-identifier">print</span> <span class="ruby-constant">ConsoleCodes</span>.<span class="ruby-identifier">wrap</span>(<span class="ruby-string">&#39;.&#39;</span>, <span class="ruby-value">:success</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-example_pending" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_pending</span><span
             class="method-args">(_notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="example_pending-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/progress_formatter.rb, line 15</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_pending</span>(<span class="ruby-identifier">_notification</span>)
   <span class="ruby-identifier">output</span>.<span class="ruby-identifier">print</span> <span class="ruby-constant">ConsoleCodes</span>.<span class="ruby-identifier">wrap</span>(<span class="ruby-string">&#39;*&#39;</span>, <span class="ruby-value">:pending</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-start_dump" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">start_dump</span><span
             class="method-args">(_notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="start_dump-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/progress_formatter.rb, line 23</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">start_dump</span>(<span class="ruby-identifier">_notification</span>)
   <span class="ruby-identifier">output</span>.<span class="ruby-identifier">puts</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

@@ -21,8 +21,6 @@
 <link href="../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="module">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,36 +55,24 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li class="calls-super" ><a href="#method-c-new">::new</a>
-    
     <li ><a href="#method-i-is_expected">#is_expected</a>
-    
     <li ><a href="#method-i-should">#should</a>
-    
     <li ><a href="#method-i-should_not">#should_not</a>
-    
     <li ><a href="#method-i-subject">#subject</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -104,46 +90,31 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-new" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">new</span><span
             class="method-args">(*)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
             <div class="method-calls-super">
               Calls superclass method
               
             </div>
-          
 
-          
           <div class="method-source-code" id="new-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/memoized_helpers.rb, line 133</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-operator">*</span>)
@@ -151,36 +122,26 @@
   <span class="ruby-keyword">super</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-is_expected" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">is_expected</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Wraps the `subject` in `expect` to make it the target of an expectation. Designed to read nicely for one-liners.</p>
 
 <p>@example</p>
@@ -194,38 +155,26 @@
 <p>@see <a href="MemoizedHelpers.html#method-i-subject"><code>subject</code></a> @see <a href="MemoizedHelpers.html#method-i-should"><code>should</code></a> @see <a href="MemoizedHelpers.html#method-i-should_not"><code>should_not</code></a></p>
 
 <p>@note This only works if you are using rspec-expectations.</p>
-          
-          
 
-          
           <div class="method-source-code" id="is_expected-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/memoized_helpers.rb, line 118</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">is_expected</span>
   <span class="ruby-identifier">expect</span>(<span class="ruby-identifier">subject</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-should" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">should</span><span
             class="method-args">(matcher=nil, message=nil)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>When `should` is called with no explicit receiver, the call is delegated to the object returned by `subject`. Combined with an implicit subject this supports very concise expressions.</p>
 
 <p>@example</p>
@@ -240,38 +189,26 @@
 <p>@note This only works if you are using rspec-expectations. @note If you are using RSpec&#39;s newer expect-based syntax you may</p>
 
 <pre>want to use `is_expected.to` instead of `should`.</pre>
-          
-          
 
-          
           <div class="method-source-code" id="should-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/memoized_helpers.rb, line 80</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">should</span>(<span class="ruby-identifier">matcher</span>=<span class="ruby-keyword">nil</span>, <span class="ruby-identifier">message</span>=<span class="ruby-keyword">nil</span>)
   <span class="ruby-constant">RSpec</span><span class="ruby-operator">::</span><span class="ruby-constant">Expectations</span><span class="ruby-operator">::</span><span class="ruby-constant">PositiveExpectationHandler</span>.<span class="ruby-identifier">handle_matcher</span>(<span class="ruby-identifier">subject</span>, <span class="ruby-identifier">matcher</span>, <span class="ruby-identifier">message</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-should_not" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">should_not</span><span
             class="method-args">(matcher=nil, message=nil)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Just like `should`, `should_not` delegates to the subject (implicit or explicit) of the example group.</p>
 
 <p>@example</p>
@@ -286,38 +223,26 @@
 <p>@note This only works if you are using rspec-expectations. @note If you are using RSpec&#39;s newer expect-based syntax you may</p>
 
 <pre>want to use `is_expected.to_not` instead of `should_not`.</pre>
-          
-          
 
-          
           <div class="method-source-code" id="should_not-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/memoized_helpers.rb, line 99</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">should_not</span>(<span class="ruby-identifier">matcher</span>=<span class="ruby-keyword">nil</span>, <span class="ruby-identifier">message</span>=<span class="ruby-keyword">nil</span>)
   <span class="ruby-constant">RSpec</span><span class="ruby-operator">::</span><span class="ruby-constant">Expectations</span><span class="ruby-operator">::</span><span class="ruby-constant">NegativeExpectationHandler</span>.<span class="ruby-identifier">handle_matcher</span>(<span class="ruby-identifier">subject</span>, <span class="ruby-identifier">matcher</span>, <span class="ruby-identifier">message</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-subject" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">subject</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@note `subject` was contributed by Joe Ferris to support the one-liner</p>
 
 <pre>syntax embraced by shoulda matchers:
@@ -366,10 +291,7 @@ state that is shared across _all_ examples in an example group,
 `subject` is _not_ intended to be used in a `before(:context)` hook.</pre>
 
 <p>@see <a href="MemoizedHelpers.html#method-i-should"><code>should</code></a> @see <a href="MemoizedHelpers.html#method-i-should_not"><code>should_not</code></a> @see <a href="MemoizedHelpers.html#method-i-is_expected"><code>is_expected</code></a></p>
-          
-          
 
-          
           <div class="method-source-code" id="subject-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/memoized_helpers.rb, line 57</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">subject</span>
@@ -379,19 +301,14 @@ state that is shared across _all_ examples in an example group,
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

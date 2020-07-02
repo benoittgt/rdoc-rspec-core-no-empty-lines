@@ -21,8 +21,6 @@
 <link href="../../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="class">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,58 +55,39 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
 <div id="parent-class-section" class="nav-section">
   <h3>Parent</h3>
 
-  
   <p class="link"><a href="../../../Object.html">Object</a>
-  
 </div>
-
 
     
 <div id="includes-section" class="nav-section">
   <h3>Included Modules</h3>
 
   <ul class="link-list">
-  
-  
     <li><a class="include" href="../ShellEscape.html">RSpec::Core::ShellEscape</a>
-  
-  
   </ul>
 </div>
 
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-c-new">::new</a>
-    
     <li ><a href="#method-i-bisect_environment_hash">#bisect_environment_hash</a>
-    
     <li ><a href="#method-i-command_for">#command_for</a>
-    
     <li ><a href="#method-i-original_locations">#original_locations</a>
-    
     <li ><a href="#method-i-repro_command_from">#repro_command_from</a>
-    
     <li ><a href="#method-i-spec_opts_without_bisect">#spec_opts_without_bisect</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -124,35 +103,24 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
     <section class="constants-list">
       <header>
         <h3>Constants</h3>
       </header>
       <dl>
-      
         <dt id="RUBY">RUBY
-        
         <dd><p>Path to the currently running Ruby executable, borrowed from Rake: <a href="https://github.com/ruby/rake/blob/v10.4.2/lib/rake/file_utils.rb#L8-L12">github.com/ruby/rake/blob/v10.4.2/lib/rake/file_utils.rb#L8-L12</a> Note that we skip `<a href="'RUBY'">ENV</a>` because we don&#39;t have to deal with running <a href="../../../RSpec.html"><code>RSpec</code></a> from within a MRI source repository: <a href="https://github.com/ruby/rake/commit/968682759b3b65e42748cd2befb2ff3e982272d9">github.com/ruby/rake/commit/968682759b3b65e42748cd2befb2ff3e982272d9</a></p>
-        
-      
       </dl>
     </section>
-    
 
-    
     <section class="attribute-method-details" class="method-section">
       <header>
         <h3>Attributes</h3>
       </header>
 
-      
       <div id="attribute-i-original_cli_args" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">original_cli_args</span><span
@@ -161,80 +129,54 @@
 
         <div class="method-description">
         
-        
-        
         </div>
       </div>
-      
     </section>
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-new" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">new</span><span
             class="method-args">(original_cli_args)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="new-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/bisect/shell_command.rb, line 13</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">original_cli_args</span>)
   <span class="ruby-ivar">@original_cli_args</span> = <span class="ruby-identifier">original_cli_args</span>.<span class="ruby-identifier">reject</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">arg</span><span class="ruby-operator">|</span> <span class="ruby-identifier">arg</span>.<span class="ruby-identifier">start_with?</span>(<span class="ruby-string">&quot;--bisect&quot;</span>) }
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-bisect_environment_hash" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">bisect_environment_hash</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="bisect_environment_hash-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/bisect/shell_command.rb, line 47</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">bisect_environment_hash</span>
@@ -245,33 +187,21 @@
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-command_for" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">command_for</span><span
             class="method-args">(locations, server)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="command_for-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/bisect/shell_command.rb, line 17</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">command_for</span>(<span class="ruby-identifier">locations</span>, <span class="ruby-identifier">server</span>)
@@ -289,66 +219,42 @@
   <span class="ruby-identifier">parts</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">&quot; &quot;</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-original_locations" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">original_locations</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="original_locations-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/bisect/shell_command.rb, line 43</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">original_locations</span>
   <span class="ruby-identifier">parsed_original_cli_options</span>.<span class="ruby-identifier">fetch</span>(<span class="ruby-value">:files_or_directories_to_run</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-repro_command_from" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">repro_command_from</span><span
             class="method-args">(locations)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="repro_command_from-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/bisect/shell_command.rb, line 32</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">repro_command_from</span>(<span class="ruby-identifier">locations</span>)
@@ -362,33 +268,21 @@
   <span class="ruby-identifier">parts</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">&quot; &quot;</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-spec_opts_without_bisect" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">spec_opts_without_bisect</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="spec_opts_without_bisect-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/bisect/shell_command.rb, line 55</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">spec_opts_without_bisect</span>
@@ -399,19 +293,14 @@
   )
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

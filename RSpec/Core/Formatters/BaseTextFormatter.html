@@ -21,8 +21,6 @@
 <link href="../../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="class">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,46 +55,31 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
 <div id="parent-class-section" class="nav-section">
   <h3>Parent</h3>
 
-  
   <p class="link"><a href="BaseFormatter.html">RSpec::Core::Formatters::BaseFormatter</a>
-  
 </div>
 
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-i-close">#close</a>
-    
     <li ><a href="#method-i-dump_failures">#dump_failures</a>
-    
     <li ><a href="#method-i-dump_pending">#dump_pending</a>
-    
     <li ><a href="#method-i-dump_summary">#dump_summary</a>
-    
     <li ><a href="#method-i-message">#message</a>
-    
     <li ><a href="#method-i-seed">#seed</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -114,45 +97,31 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
 
-    
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-close" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">close</span><span
             class="method-args">(_notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api public</p>
 
 <p>Invoked at the end of a suite run. Allows the formatter to do any tidying up, but be aware that formatter output streams may be used elsewhere so don&#39;t actually close them.</p>
 
 <p>@param _notification [NullNotification] (Ignored)</p>
-          
-          
 
-          
           <div class="method-source-code" id="close-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/base_text_formatter.rb, line 65</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">close</span>(<span class="ruby-identifier">_notification</span>)
@@ -163,37 +132,25 @@
   <span class="ruby-identifier">output</span>.<span class="ruby-identifier">flush</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-dump_failures" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">dump_failures</span><span
             class="method-args">(notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api public</p>
 
 <p>Dumps detailed information about each example failure.</p>
 
 <p>@param notification [NullNotification]</p>
-          
-          
 
-          
           <div class="method-source-code" id="dump_failures-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/base_text_formatter.rb, line 30</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">dump_failures</span>(<span class="ruby-identifier">notification</span>)
@@ -201,33 +158,21 @@
   <span class="ruby-identifier">output</span>.<span class="ruby-identifier">puts</span> <span class="ruby-identifier">notification</span>.<span class="ruby-identifier">fully_formatted_failed_examples</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-dump_pending" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">dump_pending</span><span
             class="method-args">(notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="dump_pending-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/base_text_formatter.rb, line 47</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">dump_pending</span>(<span class="ruby-identifier">notification</span>)
@@ -235,28 +180,19 @@
   <span class="ruby-identifier">output</span>.<span class="ruby-identifier">puts</span> <span class="ruby-identifier">notification</span>.<span class="ruby-identifier">fully_formatted_pending_examples</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-dump_summary" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">dump_summary</span><span
             class="method-args">(summary)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api public</p>
 
 <p>This method is invoked after the dumping of examples and failures. Each parameter is assigned to a corresponding attribute.</p>
@@ -264,80 +200,53 @@
 <p>@param summary [SummaryNotification] containing duration,</p>
 
 <pre>example_count, failure_count and pending_count</pre>
-          
-          
 
-          
           <div class="method-source-code" id="dump_summary-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/base_text_formatter.rb, line 42</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">dump_summary</span>(<span class="ruby-identifier">summary</span>)
   <span class="ruby-identifier">output</span>.<span class="ruby-identifier">puts</span> <span class="ruby-identifier">summary</span>.<span class="ruby-identifier">fully_formatted</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-message" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">message</span><span
             class="method-args">(notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api public</p>
 
 <p>Used by the reporter to send messages to the output stream.</p>
 
 <p>@param notification [MessageNotification] containing message</p>
-          
-          
 
-          
           <div class="method-source-code" id="message-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/base_text_formatter.rb, line 21</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">message</span>(<span class="ruby-identifier">notification</span>)
   <span class="ruby-identifier">output</span>.<span class="ruby-identifier">puts</span> <span class="ruby-identifier">notification</span>.<span class="ruby-identifier">message</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-seed" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">seed</span><span
             class="method-args">(notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
 
-          
           <div class="method-source-code" id="seed-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/base_text_formatter.rb, line 53</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">seed</span>(<span class="ruby-identifier">notification</span>)
@@ -345,19 +254,14 @@
   <span class="ruby-identifier">output</span>.<span class="ruby-identifier">puts</span> <span class="ruby-identifier">notification</span>.<span class="ruby-identifier">fully_formatted</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

@@ -21,8 +21,6 @@
 <link href="../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="module">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,34 +55,23 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-i-conditionally_quote">#conditionally_quote</a>
-    
     <li ><a href="#method-i-escape">#escape</a>
-    
     <li ><a href="#method-i-quote">#quote</a>
-    
     <li ><a href="#method-i-shell_allows_unquoted_ids-3F">#shell_allows_unquoted_ids?</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -100,59 +87,40 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
     <section class="constants-list">
       <header>
         <h3>Constants</h3>
       </header>
       <dl>
-      
         <dt id="SHELLS_ALLOWING_UNQUOTED_IDS">SHELLS_ALLOWING_UNQUOTED_IDS
-        
         <dd><p>Known shells that require quoting: zsh, csh, tcsh.</p>
 
 <p>Feel free to add other shells to this list that are known to allow `rspec ./<a href="1:1">some_spec.rb</a>` syntax without quoting the id.</p>
 
 <p>@private</p>
-        
-      
       </dl>
     </section>
-    
 
-    
 
-    
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-conditionally_quote" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">conditionally_quote</span><span
             class="method-args">(id)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="conditionally_quote-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/shell_escape.rb, line 32</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">conditionally_quote</span>(<span class="ruby-identifier">id</span>)
@@ -160,98 +128,62 @@
   <span class="ruby-identifier">quote</span>(<span class="ruby-identifier">id</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-escape" class="method-detail method-alias">
-        
         <div class="method-heading">
           <span class="method-name">escape</span><span
             class="method-args">(argument)</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>:nocov:</p>
-          
-          
 
-          
         </div>
 
-        
 
-        
         <div class="aliases">
           Alias for: <a href="ShellEscape.html#method-i-quote">quote</a>
         </div>
-        
       </div>
 
-    
       <div id="method-i-quote" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">quote</span><span
             class="method-args">(argument)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="quote-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/shell_escape.rb, line 8</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">quote</span>(<span class="ruby-identifier">argument</span>)
   <span class="ruby-node">&quot;&#39;#{argument.to_s.gsub(&quot;&#39;&quot;, &quot;\\\\&#39;&quot;)}&#39;&quot;</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
         <div class="aliases">
           Also aliased as: <a href="ShellEscape.html#method-i-escape">escape</a>
         </div>
-        
 
-        
       </div>
 
-    
       <div id="method-i-shell_allows_unquoted_ids-3F" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">shell_allows_unquoted_ids?</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="shell_allows_unquoted_ids-3F-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/shell_escape.rb, line 37</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">shell_allows_unquoted_ids?</span>
@@ -265,19 +197,14 @@
   <span class="ruby-constant">SHELLS_ALLOWING_UNQUOTED_IDS</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-constant">ENV</span>[<span class="ruby-string">&#39;SHELL&#39;</span>].<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">&#39;/&#39;</span>).<span class="ruby-identifier">last</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

@@ -21,8 +21,6 @@
 <link href="../../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="class">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,44 +55,30 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
 <div id="parent-class-section" class="nav-section">
   <h3>Parent</h3>
 
-  
   <p class="link"><a href="../../../Object.html">Object</a>
-  
 </div>
 
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-c-new">::new</a>
-    
     <li ><a href="#method-i-append">#append</a>
-    
     <li ><a href="#method-i-delete">#delete</a>
-    
     <li ><a href="#method-i-items_for">#items_for</a>
-    
     <li ><a href="#method-i-prepend">#prepend</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -112,21 +96,15 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
     <section class="attribute-method-details" class="method-section">
       <header>
         <h3>Attributes</h3>
       </header>
 
-      
       <div id="attribute-i-items_and_filters" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">items_and_filters</span><span
@@ -135,39 +113,26 @@
 
         <div class="method-description">
         
-        
-        
         </div>
       </div>
-      
     </section>
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-new" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">new</span><span
             class="method-args">(applies_predicate)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="new-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/metadata_filter.rb, line 101</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">applies_predicate</span>)
@@ -175,107 +140,70 @@
   <span class="ruby-ivar">@items_and_filters</span> = []
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-append" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">append</span><span
             class="method-args">(item, metadata)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="append-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/metadata_filter.rb, line 106</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">append</span>(<span class="ruby-identifier">item</span>, <span class="ruby-identifier">metadata</span>)
   <span class="ruby-ivar">@items_and_filters</span> <span class="ruby-operator">&lt;&lt;</span> [<span class="ruby-identifier">item</span>, <span class="ruby-identifier">metadata</span>]
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-delete" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">delete</span><span
             class="method-args">(item, metadata)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="delete-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/metadata_filter.rb, line 114</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">delete</span>(<span class="ruby-identifier">item</span>, <span class="ruby-identifier">metadata</span>)
   <span class="ruby-ivar">@items_and_filters</span>.<span class="ruby-identifier">delete</span> [<span class="ruby-identifier">item</span>, <span class="ruby-identifier">metadata</span>]
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-items_for" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">items_for</span><span
             class="method-args">(request_meta)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="items_for-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/metadata_filter.rb, line 118</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">items_for</span>(<span class="ruby-identifier">request_meta</span>)
@@ -285,52 +213,35 @@
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-prepend" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">prepend</span><span
             class="method-args">(item, metadata)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="prepend-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/metadata_filter.rb, line 110</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">prepend</span>(<span class="ruby-identifier">item</span>, <span class="ruby-identifier">metadata</span>)
   <span class="ruby-ivar">@items_and_filters</span>.<span class="ruby-identifier">unshift</span> [<span class="ruby-identifier">item</span>, <span class="ruby-identifier">metadata</span>]
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

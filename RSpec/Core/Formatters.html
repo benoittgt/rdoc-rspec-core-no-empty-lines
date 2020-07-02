@@ -21,8 +21,6 @@
 <link href="../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="module">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,28 +55,20 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-c-register">::register</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -180,65 +170,46 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-register" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">register</span><span
             class="method-args">(formatter_class, *notifications)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Register the formatter class @param formatter_class [Class] formatter class to register @param notifications [Symbol, …] one or more notifications to be</p>
 
 <pre class="ruby"><span class="ruby-identifier">registered</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">specified</span> <span class="ruby-identifier">formatter</span>
 </pre>
 
 <p>@see <a href="Formatters/BaseFormatter.html"><code>RSpec::Core::Formatters::BaseFormatter</code></a></p>
-          
-          
 
-          
           <div class="method-source-code" id="register-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters.rb, line 86</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">register</span>(<span class="ruby-identifier">formatter_class</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">notifications</span>)
   <span class="ruby-constant">Loader</span>.<span class="ruby-identifier">formatters</span>[<span class="ruby-identifier">formatter_class</span>] = <span class="ruby-identifier">notifications</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

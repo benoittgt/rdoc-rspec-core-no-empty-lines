@@ -21,8 +21,6 @@
 <link href="../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="module">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,42 +55,27 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-i-after">#after</a>
-    
     <li ><a href="#method-i-append_after">#append_after</a>
-    
     <li ><a href="#method-i-append_before">#append_before</a>
-    
     <li ><a href="#method-i-around">#around</a>
-    
     <li ><a href="#method-i-before">#before</a>
-    
     <li ><a href="#method-i-hooks">#hooks</a>
-    
     <li ><a href="#method-i-prepend_after">#prepend_after</a>
-    
     <li ><a href="#method-i-prepend_before">#prepend_before</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -108,50 +91,34 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
     <section class="constants-list">
       <header>
         <h3>Constants</h3>
       </header>
       <dl>
-      
         <dt id="Hook">Hook
-        
         <dd><p>@private</p>
-        
-      
       </dl>
     </section>
-    
 
-    
 
-    
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-after" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">after</span><span
             class="method-args">(*args, &amp;block)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api public @overload after(&amp;block) @overload after(scope, &amp;block)</p>
 
 <pre>@param scope [Symbol] `:example`, `:context`, or `:suite` (defaults to
@@ -205,105 +172,69 @@
 
 <pre>`RSpec.configuration` since they exist independently of any
 example or example group.</pre>
-          
-          
 
-          
           <div class="method-source-code" id="after-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/hooks.rb, line 277</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">after</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
   <span class="ruby-identifier">hooks</span>.<span class="ruby-identifier">register</span> <span class="ruby-value">:prepend</span>, <span class="ruby-value">:after</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
         <div class="aliases">
           Also aliased as: <a href="Hooks.html#method-i-prepend_after">prepend_after</a>
         </div>
-        
 
-        
       </div>
 
-    
       <div id="method-i-append_after" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">append_after</span><span
             class="method-args">(*args, &amp;block)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Adds `block` to the back of the list of `after` blocks in the same scope (`:example`, `:context`, or `:suite`).</p>
 
 <p>See {#after} for scoping semantics.</p>
-          
-          
 
-          
           <div class="method-source-code" id="append_after-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/hooks.rb, line 287</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">append_after</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
   <span class="ruby-identifier">hooks</span>.<span class="ruby-identifier">register</span> <span class="ruby-value">:append</span>, <span class="ruby-value">:after</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-append_before" class="method-detail method-alias">
-        
         <div class="method-heading">
           <span class="method-name">append_before</span><span
             class="method-args">(*args, &amp;block)</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
         </div>
 
-        
 
-        
         <div class="aliases">
           Alias for: <a href="Hooks.html#method-i-before">before</a>
         </div>
-        
       </div>
 
-    
       <div id="method-i-around" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">around</span><span
             class="method-args">(*args, &amp;block)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api public @overload around(&amp;block) @overload around(scope, &amp;block)</p>
 
 <pre>@param scope [Symbol] `:example` (defaults to `:example`)
@@ -362,38 +293,26 @@ associated `before` and `after` hooks.</pre>
 <p>This means after any `before` context hooks, but before any `before` example hooks, and similarly after any `after` example hooks but before any `after` context hooks.</p>
 
 <p>They are not a synonym for `before`/`after`.</p>
-          
-          
 
-          
           <div class="method-source-code" id="around-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/hooks.rb, line 349</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">around</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
   <span class="ruby-identifier">hooks</span>.<span class="ruby-identifier">register</span> <span class="ruby-value">:prepend</span>, <span class="ruby-value">:around</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-before" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">before</span><span
             class="method-args">(*args, &amp;block)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api public</p>
 
 <p>@overload before(&amp;block) @overload before(scope, &amp;block)</p>
@@ -548,129 +467,85 @@ associated `before` and `after` hooks.</pre>
 
 <pre>`RSpec.configuration` since they exist independently of any
 example or example group.</pre>
-          
-          
 
-          
           <div class="method-source-code" id="before-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/hooks.rb, line 200</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">before</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
   <span class="ruby-identifier">hooks</span>.<span class="ruby-identifier">register</span> <span class="ruby-value">:append</span>, <span class="ruby-value">:before</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
         <div class="aliases">
           Also aliased as: <a href="Hooks.html#method-i-append_before">append_before</a>
         </div>
-        
 
-        
       </div>
 
-    
       <div id="method-i-hooks" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">hooks</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private Holds the various registered hooks.</p>
-          
-          
 
-          
           <div class="method-source-code" id="hooks-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/hooks.rb, line 355</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">hooks</span>
   <span class="ruby-ivar">@hooks</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">HookCollections</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword">self</span>, <span class="ruby-constant">FilterableItemRepository</span><span class="ruby-operator">::</span><span class="ruby-constant">UpdateOptimized</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-prepend_after" class="method-detail method-alias">
-        
         <div class="method-heading">
           <span class="method-name">prepend_after</span><span
             class="method-args">(*args, &amp;block)</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
         </div>
 
-        
 
-        
         <div class="aliases">
           Alias for: <a href="Hooks.html#method-i-after">after</a>
         </div>
-        
       </div>
 
-    
       <div id="method-i-prepend_before" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">prepend_before</span><span
             class="method-args">(*args, &amp;block)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Adds `block` to the front of the list of `before` blocks in the same scope (`:example`, `:context`, or `:suite`).</p>
 
 <p>See {#before} for scoping semantics.</p>
-          
-          
 
-          
           <div class="method-source-code" id="prepend_before-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/hooks.rb, line 210</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">prepend_before</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
   <span class="ruby-identifier">hooks</span>.<span class="ruby-identifier">register</span> <span class="ruby-value">:prepend</span>, <span class="ruby-value">:before</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

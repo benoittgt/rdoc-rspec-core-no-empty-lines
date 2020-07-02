@@ -21,8 +21,6 @@
 <link href="../../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="class">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,52 +55,36 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
 <div id="parent-class-section" class="nav-section">
   <h3>Parent</h3>
 
-  
   <p class="link"><a href="../../../Object.html">Object</a>
-  
 </div>
-
 
     
 <div id="includes-section" class="nav-section">
   <h3>Included Modules</h3>
 
   <ul class="link-list">
-  
-  
     <li><a class="include" href="../HashImitatable.html">RSpec::Core::HashImitatable</a>
-  
-  
   </ul>
 </div>
 
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-i-ensure_timing_set">#ensure_timing_set</a>
-    
     <li ><a href="#method-i-example_skipped-3F">#example_skipped?</a>
-    
     <li ><a href="#method-i-record_finished">#record_finished</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -118,21 +100,15 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
     <section class="attribute-method-details" class="method-section">
       <header>
         <h3>Attributes</h3>
       </header>
 
-      
       <div id="attribute-i-exception" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">exception</span><span
@@ -140,12 +116,9 @@
         </div>
 
         <div class="method-description">
-        
         <p>@return [Exception, nil] The failure, if there was one.</p>
-        
         </div>
       </div>
-      
       <div id="attribute-i-finished_at" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">finished_at</span><span
@@ -153,12 +126,9 @@
         </div>
 
         <div class="method-description">
-        
         <p>@return [Time] When the example finished.</p>
-        
         </div>
       </div>
-      
       <div id="attribute-i-pending_exception" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">pending_exception</span><span
@@ -166,16 +136,13 @@
         </div>
 
         <div class="method-description">
-        
         <p>@return [Exception, nil] The exception triggered while</p>
 
 <pre>executing the pending example. If no exception was triggered
 it would no longer get a status of `:pending` unless it was
 tagged with `:skip`.</pre>
-        
         </div>
       </div>
-      
       <div id="attribute-i-pending_fixed" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">pending_fixed</span><span
@@ -183,14 +150,11 @@ tagged with `:skip`.</pre>
         </div>
 
         <div class="method-description">
-        
         <p>@return [Boolean] For examples tagged with `:pending`,</p>
 
 <pre>this indicates whether or not it now passes.</pre>
-        
         </div>
       </div>
-      
       <div id="attribute-i-pending_fixed-3F" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">pending_fixed?</span><span
@@ -198,14 +162,11 @@ tagged with `:skip`.</pre>
         </div>
 
         <div class="method-description">
-        
         <p>@return [Boolean] For examples tagged with `:pending`,</p>
 
 <pre>this indicates whether or not it now passes.</pre>
-        
         </div>
       </div>
-      
       <div id="attribute-i-pending_message" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">pending_message</span><span
@@ -213,14 +174,11 @@ tagged with `:skip`.</pre>
         </div>
 
         <div class="method-description">
-        
         <p>@return [String, nil] The reason the example was pending,</p>
 
 <pre>or nil if the example was not pending.</pre>
-        
         </div>
       </div>
-      
       <div id="attribute-i-run_time" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">run_time</span><span
@@ -228,12 +186,9 @@ tagged with `:skip`.</pre>
         </div>
 
         <div class="method-description">
-        
         <p>@return [Float] How long the example took in seconds.</p>
-        
         </div>
       </div>
-      
       <div id="attribute-i-started_at" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">started_at</span><span
@@ -241,12 +196,9 @@ tagged with `:skip`.</pre>
         </div>
 
         <div class="method-description">
-        
         <p>@return [Time] When the example started.</p>
-        
         </div>
       </div>
-      
       <div id="attribute-i-status" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">status</span><span
@@ -254,111 +206,74 @@ tagged with `:skip`.</pre>
         </div>
 
         <div class="method-description">
-        
         <p>@return [Symbol] `:passed`, `:failed` or `:pending`.</p>
-        
         </div>
       </div>
-      
     </section>
-    
 
-    
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-ensure_timing_set" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">ensure_timing_set</span><span
             class="method-args">(clock)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api private Populates <a href="ExecutionResult.html#attribute-i-finished_at"><code>finished_at</code></a> and <a href="ExecutionResult.html#attribute-i-run_time"><code>run_time</code></a> if it has not yet been set</p>
-          
-          
 
-          
           <div class="method-source-code" id="ensure_timing_set-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/example.rb, line 600</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">ensure_timing_set</span>(<span class="ruby-identifier">clock</span>)
   <span class="ruby-identifier">calculate_run_time</span>(<span class="ruby-identifier">clock</span>.<span class="ruby-identifier">now</span>) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">finished_at</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-example_skipped-3F" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_skipped?</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@return [Boolean] Indicates if the example was completely skipped</p>
 
 <pre>(typically done via `:skip` metadata or the `skip` method). Skipped examples
 will have a `:pending` result. A `:pending` result can also come from examples
 that were marked as `:pending`, which causes them to be run, and produces a
 `:failed` result if the example passes.</pre>
-          
-          
 
-          
           <div class="method-source-code" id="example_skipped-3F-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/example.rb, line 587</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_skipped?</span>
   <span class="ruby-identifier">status</span> <span class="ruby-operator">==</span> <span class="ruby-value">:pending</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">pending_exception</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-record_finished" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">record_finished</span><span
             class="method-args">(status, finished_at)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api private Records the finished status of the example.</p>
-          
-          
 
-          
           <div class="method-source-code" id="record_finished-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/example.rb, line 593</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">record_finished</span>(<span class="ruby-identifier">status</span>, <span class="ruby-identifier">finished_at</span>)
@@ -366,19 +281,14 @@ that were marked as `:pending`, which causes them to be run, and produces a
   <span class="ruby-identifier">calculate_run_time</span>(<span class="ruby-identifier">finished_at</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

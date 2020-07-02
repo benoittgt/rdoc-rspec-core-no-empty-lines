@@ -21,8 +21,6 @@
 <link href="../../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="class">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,52 +55,34 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
 <div id="parent-class-section" class="nav-section">
   <h3>Parent</h3>
 
-  
   <p class="link"><a href="BaseFormatter.html">RSpec::Core::Formatters::BaseFormatter</a>
-  
 </div>
 
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li class="calls-super" ><a href="#method-c-new">::new</a>
-    
     <li ><a href="#method-i-dump_summary">#dump_summary</a>
-    
     <li ><a href="#method-i-example_failed">#example_failed</a>
-    
     <li class="calls-super" ><a href="#method-i-example_group_started">#example_group_started</a>
-    
     <li ><a href="#method-i-example_passed">#example_passed</a>
-    
     <li ><a href="#method-i-example_pending">#example_pending</a>
-    
     <li ><a href="#method-i-example_started">#example_started</a>
-    
     <li class="calls-super" ><a href="#method-i-start">#start</a>
-    
     <li ><a href="#method-i-start_dump">#start_dump</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -118,46 +98,31 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-new" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">new</span><span
             class="method-args">(output)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
-          
-          
           
             <div class="method-calls-super">
               Calls superclass method
               <a href="BaseFormatter.html#method-c-new"><code>RSpec::Core::Formatters::BaseFormatter::new</code></a>
             </div>
-          
 
-          
           <div class="method-source-code" id="new-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/html_formatter.rb, line 13</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">output</span>)
@@ -169,41 +134,28 @@
   <span class="ruby-ivar">@printer</span> = <span class="ruby-constant">HtmlPrinter</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">output</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-dump_summary" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">dump_summary</span><span
             class="method-args">(summary)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="dump_summary-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/html_formatter.rb, line 103</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">dump_summary</span>(<span class="ruby-identifier">summary</span>)
@@ -216,33 +168,21 @@
   <span class="ruby-ivar">@printer</span>.<span class="ruby-identifier">flush</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-example_failed" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_failed</span><span
             class="method-args">(failure)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="example_failed-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/html_formatter.rb, line 55</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_failed</span>(<span class="ruby-identifier">failure</span>)
@@ -283,38 +223,25 @@
   <span class="ruby-ivar">@printer</span>.<span class="ruby-identifier">flush</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-example_group_started" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_group_started</span><span
             class="method-args">(notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
-          
-          
           
             <div class="method-calls-super">
               Calls superclass method
               <a href="BaseFormatter.html#method-i-example_group_started"><code>RSpec::Core::Formatters::BaseFormatter#example_group_started</code></a>
             </div>
-          
 
-          
           <div class="method-source-code" id="example_group_started-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/html_formatter.rb, line 28</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_group_started</span>(<span class="ruby-identifier">notification</span>)
@@ -329,33 +256,21 @@
   <span class="ruby-ivar">@printer</span>.<span class="ruby-identifier">flush</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-example_passed" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_passed</span><span
             class="method-args">(passed)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="example_passed-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/html_formatter.rb, line 49</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_passed</span>(<span class="ruby-identifier">passed</span>)
@@ -364,33 +279,21 @@
   <span class="ruby-ivar">@printer</span>.<span class="ruby-identifier">flush</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-example_pending" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_pending</span><span
             class="method-args">(pending)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="example_pending-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/html_formatter.rb, line 93</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_pending</span>(<span class="ruby-identifier">pending</span>)
@@ -403,71 +306,46 @@
   <span class="ruby-ivar">@printer</span>.<span class="ruby-identifier">flush</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-example_started" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">example_started</span><span
             class="method-args">(_notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="example_started-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/html_formatter.rb, line 45</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">example_started</span>(<span class="ruby-identifier">_notification</span>)
   <span class="ruby-ivar">@example_number</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-start" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">start</span><span
             class="method-args">(notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
-          
-          
           
             <div class="method-calls-super">
               Calls superclass method
               <a href="BaseFormatter.html#method-i-start"><code>RSpec::Core::Formatters::BaseFormatter#start</code></a>
             </div>
-          
 
-          
           <div class="method-source-code" id="start-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/html_formatter.rb, line 22</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">start</span>(<span class="ruby-identifier">notification</span>)
@@ -476,33 +354,21 @@
   <span class="ruby-ivar">@printer</span>.<span class="ruby-identifier">flush</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-start_dump" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">start_dump</span><span
             class="method-args">(_notification)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
           
-          
-          
-          
 
-          
           <div class="method-source-code" id="start_dump-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/html_formatter.rb, line 40</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">start_dump</span>(<span class="ruby-identifier">_notification</span>)
@@ -510,19 +376,14 @@
   <span class="ruby-ivar">@printer</span>.<span class="ruby-identifier">flush</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

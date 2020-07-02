@@ -21,8 +21,6 @@
 <link href="../../../css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="class">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,42 +55,29 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
 <div id="parent-class-section" class="nav-section">
   <h3>Parent</h3>
 
-  
   <p class="link"><a href="../../../Object.html">Object</a>
-  
 </div>
 
-
     
-
     
-
     
 <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-i-lines_around">#lines_around</a>
-    
     <li ><a href="#method-i-post_process">#post_process</a>
-    
     <li ><a href="#method-i-snippet">#snippet</a>
-    
     <li ><a href="#method-i-snippet_for">#snippet_for</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -110,36 +95,25 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
 
-    
 
-    
+
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Instance Methods</h3>
        </header>
 
-    
       <div id="method-i-lines_around" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">lines_around</span><span
             class="method-args">(file, line)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api private</p>
 
 <p>Extract lines of code centered around a particular line within a source file.</p>
@@ -147,10 +121,7 @@
 <p>@param file [String] filename @param line [Fixnum] line number @return [String] lines around the target line within the file (2 above</p>
 
 <pre>and 1 below).</pre>
-          
-          
 
-          
           <div class="method-source-code" id="lines_around-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/html_snippet_extractor.rb, line 84</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">lines_around</span>(<span class="ruby-identifier">file</span>, <span class="ruby-identifier">line</span>)
@@ -168,28 +139,19 @@
   <span class="ruby-node">&quot;# Couldn&#39;t get snippet for #{file}&quot;</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-post_process" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">post_process</span><span
             class="method-args">(highlighted, offending_line)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api private</p>
 
 <p>Adds line numbers to all lines and highlights the line where the failure occurred using html `span` tags.</p>
@@ -200,10 +162,7 @@
 </pre>
 
 <p>@param offending_line [Fixnum] line where failure occured @return [String] completed snippet</p>
-          
-          
 
-          
           <div class="method-source-code" id="post_process-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/html_snippet_extractor.rb, line 108</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">post_process</span>(<span class="ruby-identifier">highlighted</span>, <span class="ruby-identifier">offending_line</span>)
@@ -216,28 +175,19 @@
   <span class="ruby-identifier">new_lines</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">&quot;\n&quot;</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-snippet" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">snippet</span><span
             class="method-args">(backtrace)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api private</p>
 
 <p>Extract lines of code corresponding to  a backtrace.</p>
@@ -248,10 +198,7 @@
 </pre>
 
 <p>@see <a href="HtmlSnippetExtractor.html#method-i-post_process"><code>post_process</code></a></p>
-          
-          
 
-          
           <div class="method-source-code" id="snippet-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/html_snippet_extractor.rb, line 49</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">snippet</span>(<span class="ruby-identifier">backtrace</span>)
@@ -260,28 +207,19 @@
   <span class="ruby-identifier">post_process</span>(<span class="ruby-identifier">highlighted</span>, <span class="ruby-identifier">line</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-i-snippet_for" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">snippet_for</span><span
             class="method-args">(error_line)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@api private</p>
 
 <p>Create a snippet from a line of code.</p>
@@ -293,10 +231,7 @@
 <p>@return [String] lines around the target line within the file</p>
 
 <p>@see <a href="HtmlSnippetExtractor.html#method-i-lines_around"><code>lines_around</code></a></p>
-          
-          
 
-          
           <div class="method-source-code" id="snippet_for-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core/formatters/html_snippet_extractor.rb, line 65</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">snippet_for</span>(<span class="ruby-identifier">error_line</span>)
@@ -309,19 +244,14 @@
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 

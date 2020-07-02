@@ -21,8 +21,6 @@
 <link href="./css/rdoc.css" rel="stylesheet">
 
 
-
-
 <body id="top" role="document" class="module">
 <nav role="navigation">
   <div id="project-navigation">
@@ -57,27 +55,18 @@
 
   
 
-
   <div id="class-metadata">
     
-
     
-
     
-
     
 <div id="extends-section" class="nav-section">
   <h3>Extended With Modules</h3>
 
   <ul class="link-list">
-    
-  
     <li><a class="extend" href="RSpec/Core/Warnings.html">RSpec::Core::Warnings</a>
-  
-  
   </ul>
 </div>
-
 
     
 <!-- Method Quickref -->
@@ -85,26 +74,16 @@
   <h3>Methods</h3>
 
   <ul class="link-list" role="directory">
-    
     <li ><a href="#method-c-clear_examples">::clear_examples</a>
-    
     <li ><a href="#method-c-configuration">::configuration</a>
-    
     <li ><a href="#method-c-configure">::configure</a>
-    
     <li class="calls-super" ><a href="#method-c-const_missing">::const_missing</a>
-    
     <li ><a href="#method-c-current_example">::current_example</a>
-    
     <li ><a href="#method-c-current_example-3D">::current_example=</a>
-    
     <li ><a href="#method-c-reset">::reset</a>
-    
     <li ><a href="#method-c-world">::world</a>
-    
   </ul>
 </div>
-
 
   </div>
 </nav>
@@ -125,40 +104,26 @@
 
   </section>
 
-  
   <section id="5Buntitled-5D" class="documentation-section">
-    
 
-    
 
-    
     <section class="constants-list">
       <header>
         <h3>Constants</h3>
       </header>
       <dl>
-      
         <dt id="MODULES_TO_AUTOLOAD">MODULES_TO_AUTOLOAD
-        
         <dd><p>@private</p>
-        
-      
         <dt id="SharedContext">SharedContext
-        
         <dd><p>@private</p>
-        
-      
       </dl>
     </section>
-    
 
-    
     <section class="attribute-method-details" class="method-section">
       <header>
         <h3>Attributes</h3>
       </header>
 
-      
       <div id="attribute-c-configuration" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">configuration</span><span
@@ -166,12 +131,9 @@
         </div>
 
         <div class="method-description">
-        
         <p>Setters for shared global objects @api private</p>
-        
         </div>
       </div>
-      
       <div id="attribute-c-world" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">world</span><span
@@ -179,42 +141,29 @@
         </div>
 
         <div class="method-description">
-        
         <p>Setters for shared global objects @api private</p>
-        
         </div>
       </div>
-      
     </section>
-    
 
-    
+
      <section id="public-class-5Buntitled-5D-method-details" class="method-section">
        <header>
          <h3>Public Class Methods</h3>
        </header>
 
-    
       <div id="method-c-clear_examples" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">clear_examples</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Used to ensure examples get reloaded between multiple runs in the same process and ensures user configuration is persisted.</p>
 
 <p>Users must invoke this if they want to clear all examples but preserve current configuration when they use the runner multiple times within the same process.</p>
-          
-          
 
-          
           <div class="method-source-code" id="clear_examples-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core.rb, line 70</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">clear_examples</span>
@@ -224,28 +173,19 @@
   <span class="ruby-identifier">configuration</span>.<span class="ruby-identifier">reset_filters</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-configuration" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">configuration</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Returns the global [Configuration](RSpec/Core/Configuration) object. While you <em>can</em> use this method to access the configuration, the more common convention is to use [RSpec.configure](RSpec#configure-class_method).</p>
 
 <p>@example</p>
@@ -254,38 +194,26 @@
 </pre>
 
 <p>@see <a href="RSpec.html#method-c-configure"><code>RSpec.configure</code></a> @see <a href="RSpec/Core/Configuration.html"><code>Core::Configuration</code></a></p>
-          
-          
 
-          
           <div class="method-source-code" id="configuration-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core.rb, line 85</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">configuration</span>
   <span class="ruby-ivar">@configuration</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">RSpec</span><span class="ruby-operator">::</span><span class="ruby-constant">Core</span><span class="ruby-operator">::</span><span class="ruby-constant">Configuration</span>.<span class="ruby-identifier">new</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-configure" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">configure</span><span
             class="method-args">() { |configuration| ... }</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Yields the global configuration to a block. @yield [Configuration] global configuration</p>
 
 <p>@example</p>
@@ -296,48 +224,32 @@
 </pre>
 
 <p>@see <a href="RSpec/Core/Configuration.html"><code>Core::Configuration</code></a></p>
-          
-          
 
-          
           <div class="method-source-code" id="configure-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core.rb, line 97</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">configure</span>
   <span class="ruby-keyword">yield</span> <span class="ruby-identifier">configuration</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">block_given?</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-const_missing" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">const_missing</span><span
             class="method-args">(name)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private</p>
-          
-          
             <div class="method-calls-super">
               Calls superclass method
               
             </div>
-          
 
-          
           <div class="method-source-code" id="const_missing-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core.rb, line 168</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">const_missing</span>(<span class="ruby-identifier">name</span>)
@@ -356,28 +268,19 @@
   <span class="ruby-operator">::</span><span class="ruby-constant">RSpec</span>.<span class="ruby-identifier">const_get</span>(<span class="ruby-identifier">name</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-current_example" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">current_example</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>The example being executed.</p>
 
 <p>The primary audience for this method is library authors who need access to the example currently being executed and also want to support all versions of <a href="RSpec.html"><code>RSpec</code></a> 2 and 3.</p>
@@ -397,78 +300,51 @@
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span>
 </pre>
-          
-          
 
-          
           <div class="method-source-code" id="current_example-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core.rb, line 122</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">current_example</span>
   <span class="ruby-constant">RSpec</span><span class="ruby-operator">::</span><span class="ruby-constant">Support</span>.<span class="ruby-identifier">thread_local_data</span>[<span class="ruby-value">:current_example</span>]
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-current_example-3D" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">current_example=</span><span
             class="method-args">(example)</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Set the current example being executed. @api private</p>
-          
-          
 
-          
           <div class="method-source-code" id="current_example-3D-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core.rb, line 128</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">current_example=</span>(<span class="ruby-identifier">example</span>)
   <span class="ruby-constant">RSpec</span><span class="ruby-operator">::</span><span class="ruby-constant">Support</span>.<span class="ruby-identifier">thread_local_data</span>[<span class="ruby-value">:current_example</span>] = <span class="ruby-identifier">example</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-reset" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">reset</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>Used to ensure examples get reloaded and user configuration gets reset to defaults between multiple runs in the same process.</p>
 
 <p>Users must invoke this if they want to have the configuration reset when they use the runner multiple times within the same process. Users must deal themselves with re-configuration of <a href="RSpec.html"><code>RSpec</code></a> before run.</p>
-          
-          
 
-          
           <div class="method-source-code" id="reset-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core.rb, line 58</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">reset</span>
@@ -477,52 +353,35 @@
   <span class="ruby-ivar">@configuration</span> = <span class="ruby-keyword">nil</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
       <div id="method-c-world" class="method-detail ">
-        
         <div class="method-heading">
           <span class="method-name">world</span><span
             class="method-args">()</span>
-          
           <span class="method-click-advice">click to toggle source</span>
-          
         </div>
-        
 
         <div class="method-description">
-          
           <p>@private Internal container for global non-configuration data.</p>
-          
-          
 
-          
           <div class="method-source-code" id="world-source">
             <pre><span class="ruby-comment"># File ../rspec-dev/repos/rspec-core/lib/rspec/core.rb, line 134</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">world</span>
   <span class="ruby-ivar">@world</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">RSpec</span><span class="ruby-operator">::</span><span class="ruby-constant">Core</span><span class="ruby-operator">::</span><span class="ruby-constant">World</span>.<span class="ruby-identifier">new</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
-          
         </div>
 
-        
 
-        
       </div>
 
-    
     </section>
-  
-  </section>
 
+  </section>
 </main>
 
 
